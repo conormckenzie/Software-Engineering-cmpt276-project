@@ -19,7 +19,7 @@
         <nav>
           <ul>
             <li><%= link_to "Home",   '/login/index' %></li>
-            <li><%= link_to "Sell", '#' %></li>
+            <li><%= link_to "Sell", '/sell' %></li>
             <li><%= link_to "Buy", '#' %></li>
             <li><%= link_to "About", '#' %></li>
             <li><%= link_to "Log in", '/login' %></li>
@@ -29,6 +29,9 @@
       </div>
     </header>
     <div>
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
       <%= yield %>
     </div>  
   </body>

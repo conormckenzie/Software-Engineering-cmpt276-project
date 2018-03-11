@@ -1,0 +1,23 @@
+<%= stylesheet_link_tag 'application' %>
+
+<% provide(:title, 'Sell') %>
+<h1 align="center">Sell My Book</h1>
+
+<div class="center">
+  <div id="createbook_form">
+    <%= form_for(@book) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+
+      <%= f.label :year %>
+      <%= f.text_field :year %>
+
+      <%= f.label :isbn %>
+      <%= f.text_field :isbn %>
+
+      <%= f.submit "Post my book", id: 'submit' %>
+    <% end %>
+  </div>
+</div>
