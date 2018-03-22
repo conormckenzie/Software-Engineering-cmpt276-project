@@ -1,10 +1,12 @@
 class BooksController < ApplicationController
+	before_action :require_login
+
 	def new
 		@book = Book.new
 	end
 
 	def index
-    	@book = Book.all
+    	@books = Book.all
   	end
 
 	def show
@@ -25,6 +27,13 @@ class BooksController < ApplicationController
 
 
 	private
+
+	def require_login
+		unless logged_in?
+			flash[:error] = "You must be logged in to access this section"
+      		redirect_to "/login"
+      	end
+    end
 
     def book_params
       params.require(:book).permit(:title, :year, :isbn)
