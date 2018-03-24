@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :users
   resources :books
 
-  get    'login/index'
+  get    'sessions/index'
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   get    '/sell',    to:  'books#new'
@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   delete '/logout',  to: 'sessions#destroy'
 
 
-  root 'login#index'
+  root 'sessions#index'
 
 end
