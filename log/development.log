@@ -10434,3 +10434,160 @@ Completed 200 OK in 47ms (Views: 32.6ms | ActiveRecord: 0.9ms)
 >>>>>>> Shahriar
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 14:56:37 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 643ms (Views: 636.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-27 14:56:48 -0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (37.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 93ms (Views: 77.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-27 14:56:50 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-27 14:56:51 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-27 14:56:53 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQAculAT-f4J-2tez_b0-_bFSBMdX6RYx23iGgJxW6f5OvnhKDc4SCdFVnL8AhciR1snmE6i_ArLDnPkpqT4wN7-7E19-pU3WjS4edj_cmOpGYrAYv6DxU6cOgaPMg3CWuN-_ZbauwL2OmmlTvkHGNLXhc7wN6b5OzL6b7RRpppbu_tv3nHXAOwOhXJ3-Kc0ZkpkfQLGlgOa0SNy7zKp0TLXfo83e0xkS4ibRlBLKxMDU1FTWE_ykf2edd44dqcvMN4WVsiAgleyln1859hVGPlyRIy0wOSd-h9DRWKjwennF8xyouPifveMOjjexYr9aghZ8Ofynm2hpoin8Jv3mSnN&state=1f1bae8bf6863e369bb9c87a510f9e32a9269e532c730b0f" for 127.0.0.1 at 2018-03-27 14:56:53 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#facebook as HTML
+  Parameters: {"code"=>"AQAculAT-f4J-2tez_b0-_bFSBMdX6RYx23iGgJxW6f5OvnhKDc4SCdFVnL8AhciR1snmE6i_ArLDnPkpqT4wN7-7E19-pU3WjS4edj_cmOpGYrAYv6DxU6cOgaPMg3CWuN-_ZbauwL2OmmlTvkHGNLXhc7wN6b5OzL6b7RRpppbu_tv3nHXAOwOhXJ3-Kc0ZkpkfQLGlgOa0SNy7zKp0TLXfo83e0xkS4ibRlBLKxMDU1FTWE_ykf2edd44dqcvMN4WVsiAgleyln1859hVGPlyRIy0wOSd-h9DRWKjwennF8xyouPifveMOjjexYr9aghZ8Ofynm2hpoin8Jv3mSnN", "state"=>"1f1bae8bf6863e369bb9c87a510f9e32a9269e532c730b0f", "provider"=>"facebook"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "781520992033577"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:5:in `from_omniauth'
+app/controllers/sessions_controller.rb:10:in `facebook'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (33.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (23.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20180214010700)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "provider" varchar, "uid" varchar, "name" varchar, "oauth_token" varchar, "oauth_expires_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180214010700"]]
+  [1m[35m (22.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20180215232236)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180215232236"]]
+  [1m[35m (18.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateBooks (20180309234737)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "year" varchar, "isbn" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180309234737"]]
+  [1m[35m (22.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddNameToBooks (20180326233458)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "books" ADD "price" varchar[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "books" ADD "course_number" varchar[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "books" ADD "image" varchar[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "books" ADD "author" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180326233458"]]
+  [1m[35m (18.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-27 21:57:41.816641"], ["updated_at", "2018-03-27 21:57:41.816641"]]
+  [1m[35m (17.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-27 14:58:00 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 161ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-27 14:58:03 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-27 14:58:05 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-27 14:58:10 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQC89AVjpWxAFlClQBLbh12B6eBjBAI45Mrvn3jGHXDiIv816bZQVeKHDMWd_PotrAIaddYeZiSOz10dAJq9bgCLzghE2iHq5MeFA5d--8MP5Ui_yP_VqWf4hVzIbzrKsih4Q0JbHXxRIwuoM25GonUSt04UbS_5hIPqzniXYGqCpwqCL1gP677Sym-ehLXiQuLH2MedvphkC5EQl6-GneVdr_bRfoTREIQzVuUOhDTEV5nreoWV3E1vbcvGaiX7cMrCbEqrbeireozxo_wRGiKwQkxB6BHbl8oqSeVoshxrVooEnwziBaRtg1kWpN3fqsNI25p-CBE2rMruUZ79aCL1&state=edb142173a7d8076c030207f00175a86d0aabcbbb0314d86" for 127.0.0.1 at 2018-03-27 14:58:11 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#facebook as HTML
+  Parameters: {"code"=>"AQC89AVjpWxAFlClQBLbh12B6eBjBAI45Mrvn3jGHXDiIv816bZQVeKHDMWd_PotrAIaddYeZiSOz10dAJq9bgCLzghE2iHq5MeFA5d--8MP5Ui_yP_VqWf4hVzIbzrKsih4Q0JbHXxRIwuoM25GonUSt04UbS_5hIPqzniXYGqCpwqCL1gP677Sym-ehLXiQuLH2MedvphkC5EQl6-GneVdr_bRfoTREIQzVuUOhDTEV5nreoWV3E1vbcvGaiX7cMrCbEqrbeireozxo_wRGiKwQkxB6BHbl8oqSeVoshxrVooEnwziBaRtg1kWpN3fqsNI25p-CBE2rMruUZ79aCL1", "state"=>"edb142173a7d8076c030207f00175a86d0aabcbbb0314d86", "provider"=>"facebook"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "781520992033577"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "shahriarrahman183@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "provider", "uid", "name", "oauth_token", "oauth_expires_at", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "shahriarrahman183@gmail.com"], ["provider", "facebook"], ["uid", "781520992033577"], ["name", "Shahriar Rahman Sakib"], ["oauth_token", "EAAGBoBXZAkpUBABjMfECSdwjuxhPM7XfIrKQlEtQOoWuBXFmRIoJnJWPoBaBjoUHekMQVOxcn9UUgGoIPtMHbZBTUEVvOl8SfX0VZBorHyDI9F6GZAqbZAZAd5eVzPPMDaEZAiV77nyHUIMlzXfUY2A2XMQJvZBaJRtj8cbFEhPZBZAoIZBPxdpMbhg"], ["oauth_expires_at", "2018-05-25 23:05:39"], ["created_at", "2018-03-27 21:58:12.243191"], ["updated_at", "2018-03-27 21:58:12.243191"], ["password_digest", "$2a$10$1Vxa3qctFAbJl6/zuBNg9u3Ckkp.6mk0fgSs3je/4dGqgpj/A/w1y"]]
+  [1m[35m (26.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND ("users"."id" != ?) LIMIT ?[0m  [["email", "shahriarrahman183@gmail.com"], ["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 14:58:12 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 14:58:24 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 15:03:03 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
