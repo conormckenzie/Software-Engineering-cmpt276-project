@@ -5849,3 +5849,25 @@ Processing by BooksController#show as HTML
 Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 17:19:24 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered books/new.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 84ms (Views: 40.6ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:19:42 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZS5Hsu3kMMAIntU+oXHyK+yzlWkCH1cnHjkrlHIwXI3LtK0iXNTioIZRSagoPPIL4NPI0h5FsTELc9E92juAw==", "book"=>{"title"=>"43", "year"=>"ff", "author"=>"f3f", "price"=>"f4e", "course_number"=>"f4e", "isbn"=>"fe4", "image"=>"few"}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered books/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 53ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
