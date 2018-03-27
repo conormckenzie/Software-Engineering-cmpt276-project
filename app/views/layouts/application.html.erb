@@ -24,6 +24,11 @@
             <li><%= link_to "About", '#' %></li>
             <li><%= link_to "Log in", '/login' %></li>
             <li><%= link_to "Sign up", '/signup' %></li>
+	    <% if current_user %>
+	        <li><%= link_to "Sign out", signout_path, id: "sign_out" %> </li>
+		<li>Signed in as <strong><%= current_user.name %></strong>!</li>
+	    <% end %> 
+
           </ul>
         </nav>
       </div>
