@@ -5,7 +5,7 @@ $main-blue: #085ac4;
 $main-green: #4CAF50;
 $dark-green: #37873a;
 $nav-font-size: 0.85em;
-$nav-height: 80px;
+$nav-height: 70px;
 
 @media (max-width: #{$tablet-width - 1px}){
 	.wrapper{
@@ -40,7 +40,7 @@ $nav-height: 80px;
 	}
 	
 	#logo{
-			max-height:80px;	
+			max-height:$nav-height;	
 			
 			&:hover{
 				background-color:$main-green;
