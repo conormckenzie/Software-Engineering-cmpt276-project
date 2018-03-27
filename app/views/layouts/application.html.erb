@@ -6,30 +6,17 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<%= render 'layouts/shim' %>
   </head>
 
   <body>
-  	<header>
-      <div>
-      	<div class="header">
-      		<h1> Udio</h1>
-        	<%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), {action: 'index', controller: 'login'} %>
-      	</div>
-
-        <nav>
-          <ul>
-            <li><%= link_to "Home",   '/login/index' %></li>
-            <li><%= link_to "Sell", '#' %></li>
-            <li><%= link_to "Buy", '#' %></li>
-            <li><%= link_to "About", '#' %></li>
-            <li><%= link_to "Log in", '/login' %></li>
-            <li><%= link_to "Sign up", '/signup' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div>
-      <%= yield %>
-    </div>  
+		<div class="wrapper">
+			<%= render 'layouts/nav' %>
+		 	<main>
+				<%= yield %>
+			</main>
+				
+			<%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>
