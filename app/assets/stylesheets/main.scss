@@ -4,35 +4,27 @@ $phone-width:480px;
 $main-blue: #085ac4;
 $main-green: #4CAF50;
 $dark-green: #37873a;
-
+$nav-font-size: 0.85em;
+$nav-height: 80px;
 
 @media (max-width: #{$tablet-width - 1px}){
 	.wrapper{
-		max-width: 1024px;
-		align-self: center;
-		margin-left: auto;
-		margin-right: auto;
-		background-color:red;
 	}
 }
 
 
 @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
 	.wrapper{
-		max-width: 1024px;
-		align-self: center;
-		margin-left: auto;
-		margin-right: auto;
-		background-color:blue;
 	}
 }
 
 
 @media (min-width: #{$desktop-width}) {
 	.wrapper{
-			align-self: center;
-			padding:auto 0px auto 0px;
-			min-height: 800px;
+		font-family: verdana, arial, helvetica, sans-serif;
+		align-self: center;
+		padding:auto 0px auto 0px;
+		min-height: 800px;
 	}
 	
 	main{
@@ -45,50 +37,46 @@ $dark-green: #37873a;
 
 	nav{
 		background-color: $main-green;
-		
-		#logo{
+	}
+	
+	#logo{
 			max-height:80px;	
 			
 			&:hover{
 				background-color:$main-green;
 			}
-		}
-		
 	}
 	
 	.navbar{
-		margin: 1% 15% 0px 15%;
-		margin-left:minmax(0%, 15%);
+		margin: 0px 15% 0px 15%;
 		align-self: center;
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-auto-rows: 80px;
+		grid-auto-rows: $nav-height;
 		
 		a{
 			text-decoration:none;
-			font-size:1.1em;
+			font-size:$nav-font-size;
+		
+			&:visited{
+				color:black;
+			}
 		}
 		
-		a:visited{
-			color:black;
-		}
+		
 		
 	}
 		
 	.navButton{
-		display:block;
 		text-align:center;
 		vertical-align:middle;
-		line-height:80px;
+		line-height:$nav-height;
 		text-decoration: none;
 		color:black;
 		&:hover {
 			background-color: $dark-green;
 		}
-		&:visited{
-				text-decoration:none;
-			color:black;	
-		}
+
 	}
 	
 	footer{
@@ -101,7 +89,7 @@ $dark-green: #37873a;
 			align-self: center;
 			display: grid;
 			grid-template-columns: repeat(13, 1fr);
-			grid-auto-rows: 80px;
+			grid-auto-rows: $nav-height;
 			
 		}
 	
@@ -114,7 +102,7 @@ $dark-green: #37873a;
 			
 			text-align:center;
 			vertical-align:middle;
-			line-height:80px;
+			line-height:$nav-height;
 			text-decoration: none;
 			color:black;
 			&:hover {
