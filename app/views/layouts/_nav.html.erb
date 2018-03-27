@@ -22,9 +22,17 @@
 			<div class="navButton">Log in</div>
 		<% end %>
 		
-		<%= link_to signup_path do %>
-			<div class="navButton">Sign up</div>
+		<% if !current_user %>
+			<%= link_to signup_path do %>
+				<div class="navButton">Sign up</div>
+			<% end %>
 		<% end %>
+		<% if current_user %>
+			<%= link_to signout_path, id: "sign_out" do %>
+				<div class="navButton">Sign out</div>
+			<% end %>
+		<% end %>
+		
 	</div>
           
 </nav>
