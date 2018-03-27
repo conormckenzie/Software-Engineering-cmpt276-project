@@ -1,6 +1,9 @@
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$desktop-width: 1080px;
 $phone-width:480px;
+$main-blue: #085ac4;
+$main-green: #4CAF50;
+$dark-green: #37873a;
 
 
 @media (max-width: #{$tablet-width - 1px}){
@@ -26,73 +29,104 @@ $phone-width:480px;
 
 
 @media (min-width: #{$desktop-width}) {
-		.wrapper{
-				align-self: center;
-				min-height: 800px;
-		}
-		main{
-				min-width: 1024px;
-				width: 80%;
-				min-height: 800px;
-				align-self: center;
-				margin: 0px auto 0px auto;
-				background-color: aquamarine;
-		}
+	.wrapper{
+			align-self: center;
+			padding:auto 0px auto 0px;
+			min-height: 800px;
+	}
+	
+	main{
+			min-width: 1024px;
+			width: 70%;
+			min-height: 800px;
+			align-self: center;
+			margin: 0px auto 0px auto;
+	}
 
-		nav{
-			background-color: #4CAF50;
+	nav{
+		background-color: $main-green;
+		
+		#logo{
+			max-height:80px;	
 			
-			img{
-					float: left;
-					height: auto;
-					width: auto;
-					max-width: 50px;
-					max-height: 50px;
-				
-					h1 {
-						width: 20px;
-
-					}
-				}
+			&:hover{
+				background-color:$main-green;
+			}
+		}
+		
+	}
+	
+	.navbar{
+		margin: 1% 15% 0px 15%;
+		margin-left:minmax(0%, 15%);
+		align-self: center;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-auto-rows: 80px;
+		
+		a{
+			text-decoration:none;
+			font-size:1.1em;
+		}
+		
+		a:visited{
+			color:black;
+		}
+		
+	}
+		
+	.navButton{
+		display:block;
+		text-align:center;
+		vertical-align:middle;
+		line-height:80px;
+		text-decoration: none;
+		color:black;
+		&:hover {
+			background-color: $dark-green;
+		}
+		&:visited{
+				text-decoration:none;
+			color:black;	
+		}
+	}
+	
+	footer{
+		
+		background-color:$main-green;
+		
+		.footerbar{
+			margin-left: 10%;
+			margin-right: 10%;
+			align-self: center;
+			display: grid;
+			grid-template-columns: repeat(13, 1fr);
+			grid-auto-rows: 80px;
 			
-				.navbar{
-						margin: 2% 10% 0px 10%;
-						align-self: center;
-						display: grid;
-						grid-template-columns: repeat(13, 1fr);
-						grid-auto-rows: 80px;
-					
-						a:hover {
-								background-color: #111111;
-						}
-
-					div{
-						align-content: center;
-						margin: auto;
-					}
-						
-				}
-				
-
 		}
-
-		footer{
-				.footerbar{
-						margin-left: 10%;
-						margin-right: 10%;
-						align-self: center;
-						display: grid;
-						grid-template-columns: repeat(13, 1fr);
-						grid-auto-rows: 80px;
-
-					div{
-						align-content: center;
-						margin: auto;
-					}
-						
-				}
-				background-color:#09a5c4;
+	
+		a{
+			text-decoration:none;
 		}
+		.footerDiv{
+			align-content: center;
+			margin: auto;
+			
+			text-align:center;
+			vertical-align:middle;
+			line-height:80px;
+			text-decoration: none;
+			color:black;
+			&:hover {
+				background-color: $main-green;
+			}
+			&:visited{
+				text-decoration:none;
+				color:black;	
+			}
+		
+		}
+	}
 }
 
 
