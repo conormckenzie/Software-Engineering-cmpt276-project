@@ -6531,3 +6531,107 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.2ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:22:02 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-03-26 18:22:05 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:22:05 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-26 18:22:07 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-26 18:22:16 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-26 18:22:16 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQCH7j07_DXXwXOZ7vRNfDD7ppszN8-U0p4nZ1zr-EtcIpRymV1PLwRrxYykq_t1tFY12lutsWy2x3xand1J5Qvp5om8ADkSBnMG10Yvnh1y9Ob-CHEj4zaj7d9qjHEKOLmorfNC4Cc83Q3wL-hZ0hnUbeohEShGW4bVgodtMnKQMuL7QVb-MW8fTkfSmL75m91gtX90rm3kaBdTGjA4RtJ_zYFKZjbRFtsHJhe849mBZ4TtI7PogN1HQrkaaMbkmNHI8s8OQ5_E8Hn7ns_qB0p4q3U_ZXKsWz2TK2ZrRfJqeyp6zfoFL6hN4sG-BPJhWuUV5DjkTvBX32oZ5xbb4ka9&state=8d8ef692c9951225c29f46da7ba902569b9e8ae2bf388c80" for 127.0.0.1 at 2018-03-26 18:22:16 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#facebook as HTML
+  Parameters: {"code"=>"AQCH7j07_DXXwXOZ7vRNfDD7ppszN8-U0p4nZ1zr-EtcIpRymV1PLwRrxYykq_t1tFY12lutsWy2x3xand1J5Qvp5om8ADkSBnMG10Yvnh1y9Ob-CHEj4zaj7d9qjHEKOLmorfNC4Cc83Q3wL-hZ0hnUbeohEShGW4bVgodtMnKQMuL7QVb-MW8fTkfSmL75m91gtX90rm3kaBdTGjA4RtJ_zYFKZjbRFtsHJhe849mBZ4TtI7PogN1HQrkaaMbkmNHI8s8OQ5_E8Hn7ns_qB0p4q3U_ZXKsWz2TK2ZrRfJqeyp6zfoFL6hN4sG-BPJhWuUV5DjkTvBX32oZ5xbb4ka9", "state"=>"8d8ef692c9951225c29f46da7ba902569b9e8ae2bf388c80", "provider"=>"facebook"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "781520992033577"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:22:16 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2018-03-26 18:23:03 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:23:03 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-26 18:23:04 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-26 18:23:05 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook" for 127.0.0.1 at 2018-03-26 18:23:05 -0700
+(facebook) Request phase initiated.
+Started GET "/auth/facebook/callback?code=AQCGAAJqn_T7dBVszbd-l8ZfOlSj5mVk_Gc9rxaQTGewvLr2zssr-aDWfdwqsiUzwK8df_SWVTJpgsSNiT_6GbIleBJ4jftLNwnvP_UKxNEJw8FHKuGcWAPbEwfRu7YIULbNZun4IYn9quxUUNCJltFalDV69mgDguOELF10eegyS7SYbqfHLSH-mFN-SAL721IW8NrPTMCcklRHPIDCp-8Pta56u1Qzx2wYrmMCHSgPLTA0Fx07tGl6JkAcSufZXBsrSI7MqsibvQGfbvRtMFIi85aF_zXJyz54oZGn2Xoh_lslss0lbWDavCl92ma-rSwKRVxKRXvXR_NVUk3hZ-PN&state=f9d59ef417be800358f8a260f77be43735372c4aef2383be" for 127.0.0.1 at 2018-03-26 18:23:05 -0700
+(facebook) Callback phase initiated.
+Processing by SessionsController#facebook as HTML
+  Parameters: {"code"=>"AQCGAAJqn_T7dBVszbd-l8ZfOlSj5mVk_Gc9rxaQTGewvLr2zssr-aDWfdwqsiUzwK8df_SWVTJpgsSNiT_6GbIleBJ4jftLNwnvP_UKxNEJw8FHKuGcWAPbEwfRu7YIULbNZun4IYn9quxUUNCJltFalDV69mgDguOELF10eegyS7SYbqfHLSH-mFN-SAL721IW8NrPTMCcklRHPIDCp-8Pta56u1Qzx2wYrmMCHSgPLTA0Fx07tGl6JkAcSufZXBsrSI7MqsibvQGfbvRtMFIi85aF_zXJyz54oZGn2Xoh_lslss0lbWDavCl92ma-rSwKRVxKRXvXR_NVUk3hZ-PN", "state"=>"f9d59ef417be800358f8a260f77be43735372c4aef2383be", "provider"=>"facebook"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "781520992033577"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 18:23:06 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:23:10 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 47ms (Views: 32.6ms | ActiveRecord: 0.9ms)
+
+
