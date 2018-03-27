@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
+<<<<<<< HEAD
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'jquery-rails'
@@ -34,6 +35,11 @@ gem 'jquery-rails'
 gem 'client_side_validations'
 
 
+=======
+ gem 'bcrypt', '~> 3.1.7'
+ gem 'omniauth-facebook'
+#gem 'pg', '0.20.0'
+>>>>>>> Shahriar
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
