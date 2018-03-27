@@ -16,7 +16,7 @@ class BooksController < ApplicationController
 	def create
 		@book = Book.new(book_params)
 		if @book.save
-			#flash[:success] = "Book successfully posted!"
+			flash[:success] = "Book successfully posted!"
 			redirect_to @book
 		else
 			render 'new'
@@ -36,6 +36,6 @@ class BooksController < ApplicationController
     end
 
     def book_params
-      params.require(:book).permit(:title, :year, :isbn)
+      params.require(:book).permit(:title, :year, :isbn, :author, :price, :course_number, :image)
     end
 end

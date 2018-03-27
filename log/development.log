@@ -5871,3 +5871,635 @@ Unpermitted parameters: :author, :price, :course_number, :image
 Completed 200 OK in 53ms (Views: 44.2ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:42:04 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails.validations' with type 'application/javascript'
+Checked in these paths: 
+  /home/goblin/Desktop/Udio/app/assets/config
+  /home/goblin/Desktop/Udio/app/assets/images
+  /home/goblin/Desktop/Udio/app/assets/javascripts
+  /home/goblin/Desktop/Udio/app/assets/stylesheets
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/goblin/Desktop/Udio/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1833599968289579322_70350826420340'
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:43:21 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/goblin/Desktop/Udio/app/views/layouts/application.html.erb:8: syntax error, unexpected ')', expecting =>
+reload', 'rails.validations' );@output_buffer.safe_append='
+                              ^
+/home/goblin/Desktop/Udio/app/views/layouts/application.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/goblin/Desktop/Udio/app/views/layouts/application.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:8: syntax error, unexpected ')', expecting =>
+app/views/layouts/application.html.erb:41: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:43: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:44:26 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/goblin/Desktop/Udio/app/views/layouts/application.html.erb:8: syntax error, unexpected ':', expecting ')'
+ions' 'data-turbolinks-track': 'reload' );@output_buffer.saf
+                              ^):
+  
+app/views/layouts/application.html.erb:8: syntax error, unexpected ':', expecting ')'
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:45:02 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails.validations' with type 'application/javascript'
+Checked in these paths: 
+  /home/goblin/Desktop/Udio/app/assets/config
+  /home/goblin/Desktop/Udio/app/assets/images
+  /home/goblin/Desktop/Udio/app/assets/javascripts
+  /home/goblin/Desktop/Udio/app/assets/stylesheets
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/goblin/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/goblin/Desktop/Udio/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'rails.validations', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1833599968289579322_70350808454980'
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:46:36 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( rails.validations.js )` to `config/initializers/assets.rb` and restart your server):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'rails.validations', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1833599968289579322_70350806362260'
+Started GET "/books" for 127.0.0.1 at 2018-03-26 17:48:06 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (32.2ms)
+Completed 200 OK in 575ms (Views: 525.9ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 17:48:10 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 56ms (Views: 53.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:48:14 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SavbP1/opQBATfBrwmxusJqOPhWtvzuFyLjAMcurdan7EbCVHSxmScJ2zhmYSVqwGr+/Y0HOUB2Q7evbbQta2A==", "book"=>{"title"=>"dd", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (7.2ms)
+  Rendered books/new.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 117ms (Views: 105.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:49:02 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ChFicPQmLBRBQzEsQiWzo/RmJ6FXyCq+xUnpIsfMq7QxPy4U3FjNjc7OUXk7VdSXMAsZ2gvhQjupOyUuw+uTLw==", "book"=>{"title"=>"Simple", "year"=>"1994", "author"=>"KCC", "price"=>"19.2", "course_number"=>"", "isbn"=>"1234567890111", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered books/new.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 97ms (Views: 88.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:49:20 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QQCrMYz/RUSZdszFHU9LrRmIQwr0aOC1rd+FptWUW8F6LudVpIGk3Rb7rJBkPyyZ3eV9cahBiDDBrUmq0bNjWg==", "book"=>{"title"=>"Simple", "year"=>"1994", "author"=>"Kdf", "price"=>"23.4", "course_number"=>"", "isbn"=>"1234567890111", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (8.5ms)
+  Rendered books/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 70ms (Views: 61.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:53:10 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"agfTg3IioCzHoyuGWqSZVlkD5zQJR9tMPVCjHDKf9htRKZ/nWlxBtUguS9Mj1P5inW7ZT1Vus8lRIm8QNrjOgA==", "book"=>{"title"=>"Simple", "year"=>"1994", "author"=>"KCC", "price"=>"12", "course_number"=>"", "isbn"=>"1234567890111", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered books/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 17:53:15 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered books/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:53:33 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ff16eQ/mcNkgLFwtQPBSpTH3JiZcwgG1hFHnWmKTMUGnRxHTTSKzkKIXYl8a1WalscanULCzai3cBMywxDMeMA==", "book"=>{"title"=>"SImple", "year"=>"1994", "author"=>"Kcc", "price"=>"12", "course_number"=>"", "isbn"=>"1234567890120", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameters: :author, :price, :course_number, :image
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 49ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 17:59:46 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oEsDLwHQ9XqbRA1TBdsCmoZYReF209DJl+B2873N6dGbZU9LKa4U4xTJbQZ8q2WuQjV7mir6uEz7krr/uerRSg==", "book"=>{"title"=>"SImple", "year"=>"1994", "author"=>"dff", "price"=>"12", "course_number"=>"", "isbn"=>"1234567890120", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "SImple"], ["year", "1994"], ["isbn", "1234567890120"], ["created_at", "2018-03-27 00:59:46.137413"], ["updated_at", "2018-03-27 00:59:46.137413"], ["price", "12"], ["course_number", ""], ["image", ""], ["author", "dff"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/4
+Completed 302 Found in 65ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/books/4" for 127.0.0.1 at 2018-03-26 17:59:46 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 61ms (Views: 53.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:04:23 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:04:26 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TmVRJpIpEbfi/R8qLr2Ny8rxplUdt/YImwhrr4yriGT83zqM0O3S/mDGIVh0mLnLSsAnI/HGnZDDXUBFKgunFQ==", "book"=>{"title"=>"e3", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered books/new.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 53ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:08:03 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s3f4hG0DiBpENbGPdGPFXMj3h6H1E/OCFsHpQiVupdOIWbTgRX1pg8u40doNE6JoDJq52qk6mwd6syVOIUmdSA==", "book"=>{"title"=>"e3", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered books/new.html.erb within layouts/application (52.5ms)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-03-26 18:08:07 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:08:09 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:08:11 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dNxRm80Di+BbjeBHd/f7Oyy0ByMNipR7cW4jYGl/3MjGZjoxj8dIqdm23jUt0s87rIWGVeH7/+MpOwiKz9/zuQ==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered books/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 48ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:10:20 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CYD3NI9d3S7gaGgLNmUZB/15w/MxvFuLztIEDynD6OcyrrtQpyM8t2/lCF5PFX4zORT9iG2VMw6ioMgDLeTQfA==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (48.8ms)
+Completed 200 OK in 75ms (Views: 66.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-03-26 18:11:02 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 64ms (Views: 60.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:11:03 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:11:04 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NQGnZFIhNEo82pmox998qSSubeMfh0xxym1fNOvXKpqHu8zOEOX3A77hp9qd+kippJ/slfP2J+mSOHTeTXcF6w==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered books/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 44ms (Views: 36.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:11:12 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eyuEfy7ko/vLT2hGmPpQxbDRnMR6B0jI7qenSiz5zMFABcgbBppCYkTCCBPhijfxdLyivyYuIE2C1WtGKN70Wg==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered books/new.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 73ms (Views: 64.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-03-26 18:11:34 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 67ms (Views: 64.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:11:36 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:11:37 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S1mWDKRS2bFvAH6QCia3ecEpum4eDCWLObcSjMJ/Pbn54/2m5pYa+O07QOJQA4N5QRg7GPJ9ThNh4jlmZN8SyA==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered books/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 48ms (Views: 38.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:11:58 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DSKdRTr6t4ForallOfiJSnTr/VeYvJ5TS57nbMUbHtA2DNEhEoRWGOcgyTBAiO5+sIbDLMSV9tYn7CtgwTwmSw==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered books/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 82ms (Views: 74.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:12:24 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K22hpTcX/NxZsksRSmadSCMwkz8JOLe6Y8XEsA7SVugQQ+3BH2kdRdY/K0QzFvp8512tRFUR3z8Ptwi8CvVucw==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.7ms)
+  Rendered books/new.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:12:45 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ap/2L+WKQfGJ8xyHsPV3/fMJ/Np/j5x1zn+x03lS9x45sbpLzfSgaAZ+fNLJhRDJN2TCoSOm9PCiDX3ffXXPhQ==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.0ms)
+  Rendered books/new.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 80ms (Views: 70.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-03-26 18:13:01 -0700
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:13:02 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered books/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:13:03 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bq3e6+a3KXmihRHnt0Vo37dFOlmYeGcQ6cA6plLP8oHcF7VBpHPqMCC+L5XtYFzfN3S7L3QJDIixlRFM9G/d8A==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.0ms)
+  Rendered books/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 43ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sessions/index" for 127.0.0.1 at 2018-03-26 18:16:46 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:21:24 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered books/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:21:25 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UK6NcFHq4mz8dHJ7uMJj2EZeSlM7Prb5i7WkN2OcCRXiFObaEy4hJX5PTAni51fYxm/LJddP3WHT4I/dxTwmZA==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered books/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:21:53 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQi07lA5IjZar28TkQNaFPaE9xTXg07L0wtGrx9VeAZeJviKeEfDr9UiD0bocz0gMunJb4uqJk6/eYqjG3JAnQ==", "book"=>{"title"=>"go", "year"=>"2009", "author"=>"mike", "price"=>"12.3", "course_number"=>"", "isbn"=>"1111111111111", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "go"], ["year", "2009"], ["isbn", "1111111111111"], ["created_at", "2018-03-27 01:21:53.043266"], ["updated_at", "2018-03-27 01:21:53.043266"], ["price", "12.3"], ["course_number", ""], ["image", ""], ["author", "mike"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/5
+Completed 302 Found in 11ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/books/5" for 127.0.0.1 at 2018-03-26 18:21:53 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:21:56 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 49ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:22:06 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LILROW0Ikm911Te9iw5h7LTer0WJ8ZQDDfPMCkKyuJieOLqTL8xRJvfuCc/RK1XsNO8uM2WA/5tVpufg5BKX6Q==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"dqw", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:22:16 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iQg5SNSmtBwCKSbjtcsiNSTiaCs3Z8b8BufP4shS3hKyJnUs/NhVhY2kRrbMu0UB4I9WUGtOrnlqlQPuzHXmiQ==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"dqw", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered books/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:35:57 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PE7yZSDL+qhpGoICe2Znl1CrHXxDx1jCjmyWRCTbJ2cHYL4BCLUbMeaX4lcCFgCjlMYjBx/uMEfiHlpIIPwf/A==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered books/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 64ms (Views: 57.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:36:17 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zrTy2AH8dfgTrNn1J0mUk+H0F/yMA0vOM7vDUyDzFLL1mr68KYKUYZwhuaBeOfOnJZkph9AqI0tfyQ9fJNQsKQ==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.7ms)
+  Rendered books/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 80ms (Views: 73.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:36:19 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t3KixIH0nKuOlXU2Tb3ImTYE92dAd1FQSSRcWfKH0GeMXO6gqYp9MgEYFWM0za+t8mnJHBxeOdUlVpBV9qDo/A==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered books/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:38:14 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d1iPRV1I3uQdDZKSUsLodAV84qurwtRtvZOZEDmzTT5MdsMhdTY/fZKA8scrso9AwRHc0PfrvOjR4VUcPZR1pQ==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.4ms)
+  Rendered books/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:45:03 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x3rVx/KsfTRMYTbitfiMDjrfV33Gi0ahZTjGu94a4m78VJmj2tKcrcPsVrfMiOs6/rJpBpqiLiQJSgq32j3a9Q==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 81ms (Views: 74.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:45:19 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EpZdiiKsJCXjdllMfK54u6QkwEEq6aFZSwMkTMV93VopuBHuCtLFvGz7ORkF3h+PYEn+OnbAydwncehAwVrlwQ==", "book"=>{"title"=>"1e2", "year"=>"2234", "author"=>"ed", "price"=>"12.5", "course_number"=>"", "isbn"=>"2222222222222", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "1e2"], ["year", "2234"], ["isbn", "2222222222222"], ["created_at", "2018-03-27 01:45:19.582892"], ["updated_at", "2018-03-27 01:45:19.582892"], ["price", "12.5"], ["course_number", ""], ["image", ""], ["author", "ed"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/6
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/books/6" for 127.0.0.1 at 2018-03-26 18:45:19 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-26 18:45:32 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered books/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-26 18:45:33 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7tD0GPdtj9JY8s9ZucueAYXxHeGdrYyU6Us4c4/wBYRcap+ytalMm9rJ8Svj7qoBBcCcl3Hc5wyxHhOZKVAq9Q==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (4.2ms)
+  Rendered books/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 74ms (Views: 64.0ms | ActiveRecord: 0.4ms)
+
+
