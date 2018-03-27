@@ -44,19 +44,6 @@ input {
 
 }
 
-.header img{
-	float: left;
-	height: auto;
- 	width: auto;
- 	max-width: 50px;
- 	max-height: 50px;
-}
-
-.header h1 {
-	width: 20px;
-
-}
-
 .center {
 	margin: auto;
 	border: 2px solid green;
