@@ -5,20 +5,23 @@ $main-blue: #085ac4;
 $main-green: #4CAF50;
 $dark-green: #37873a;
 $nav-font-size: 0.85em;
-$nav-height: 70px;
+$nav-height:70px;
 
+//phone
 @media (max-width: #{$tablet-width - 1px}){
 	.wrapper{
+		background-color:black;
 	}
 }
 
-
+//tablet
 @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
 	.wrapper{
+		background-color:red;
 	}
 }
 
-
+//desktop
 @media (min-width: #{$desktop-width}) {
 	.wrapper{
 		font-family: verdana, arial, helvetica, sans-serif;
