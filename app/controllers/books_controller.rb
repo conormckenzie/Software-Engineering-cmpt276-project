@@ -24,7 +24,8 @@ class BooksController < ApplicationController
 	end
 	
 	def search
-		render json{books: [], sellers: []}
+		@books = Book.ransack(params[:q]).result(distinct: true).limit(5)
+		
 	end
 
 

@@ -31,6 +31,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '~> 1.0'
 
 gem 'mini_magick'
+#used for search function
+gem 'ransack'
 
  gem 'bcrypt', '~> 3.1.7'
  gem 'omniauth-facebook'
