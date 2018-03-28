@@ -22,6 +22,10 @@ class BooksController < ApplicationController
 			render 'new'
 		end
 	end
+	
+	def search
+		render json{books: [], sellers: []}
+	end
 
 
 
