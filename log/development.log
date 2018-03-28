@@ -15175,3 +15175,17 @@ app/uploaders/avatar_uploader.rb:1:in `<top (required)>'
 app/models/book.rb:2:in `<class:Book>'
 app/models/book.rb:1:in `<top (required)>'
 app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 207.23.219.132 at 2018-03-28 03:12:59 +0000
+Cannot render console from 207.23.219.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (202.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 268ms (Views: 234.8ms | ActiveRecord: 1.2ms)
+
+
