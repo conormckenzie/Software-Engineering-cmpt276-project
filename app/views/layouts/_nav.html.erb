@@ -8,12 +8,13 @@
 			<div class="navButton">Home</div>
 		<% end %>
 		
+
 		<% if !current_user %>
 			<%= link_to login_path do %>
 				<div class="navButton">Sell</div>
 			<% end %>
 		<% else %>
-			<%= link_to '#' do %>
+			<%= link_to sell_path do %>
 				<div class="navButton">Sell</div>
 			<% end %>
 		<% end %>
@@ -30,7 +31,9 @@
 			<%= link_to signout_path do %>
 				<div class="navButton">Sign Out</div>
 			<% end %>
+
 		<% end %>
+		
 	</div>
           
 </nav>
