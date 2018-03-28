@@ -8,8 +8,19 @@
 			<div class="navButton">Home</div>
 		<% end %>
 		
+<<<<<<< HEAD
 		<%= link_to sell_path do%>
 		<div class="navButton">Sell</div>
+=======
+		<% if !current_user %>
+			<%= link_to login_path do %>
+				<div class="navButton">Sell</div>
+			<% end %>
+		<% else %>
+			<%= link_to '#' do %>
+				<div class="navButton">Sell</div>
+			<% end %>
+>>>>>>> search
 		<% end %>
 	
 		<%= link_to login_path do %>
@@ -20,6 +31,13 @@
 			<%= link_to signup_path do %>
 				<div class="navButton">Sign up</div>
 			<% end %>
+<<<<<<< HEAD
+=======
+		<% else %>
+			<%= link_to signout_path do %>
+				<div class="navButton">Sign Out</div>
+			<% end %>
+>>>>>>> search
 		<% end %>
 		<% if current_user %>
 			<%= link_to signout_path, id: "sign_out" do %>
