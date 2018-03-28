@@ -10434,3 +10434,823 @@ Completed 200 OK in 47ms (Views: 32.6ms | ActiveRecord: 0.9ms)
 >>>>>>> Shahriar
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:19:32 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 539ms (Views: 531.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:19:40 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:19:42 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 42.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:25:02 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+nd=  form_for(@book), :html => {:multipart => true} do |f| @
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+tml => {:multipart => true} do |f| @output_buffer.safe_appen
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/books/new.html.erb:37: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started POST "/__web_console/repl_sessions/9786dc862854403aca1392f10ddbc3a8/trace" for 127.0.0.1 at 2018-03-27 16:27:06 -0700
+Started POST "/__web_console/repl_sessions/9786dc862854403aca1392f10ddbc3a8/trace" for 127.0.0.1 at 2018-03-27 16:27:09 -0700
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:28:28 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered books/new.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:26 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:29 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered books/new.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:30 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:30 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (15.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:31:36 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:39 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered books/new.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:31:45 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-27 16:31:47 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-27 16:31:51 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:31:52 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:31:53 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered books/new.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:32:15 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 191ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:32:20 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 52.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-03-27 16:33:22 -0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:33:25 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:33:27 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (5.3ms)
+  Rendered books/new.html.erb within layouts/application (28.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 16:33:28 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gapv+iyqC2FzJtpYhUXqaUzMWvBi2/QmuxLavn61DpDwufeqOhrHM7RrFa8iNKEIKe5EiFQEpJaO1GYVqwWJHw==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>"", "image"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (4.6ms)
+  Rendered books/new.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 58.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 16:33:36 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:33:37 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:35:16 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+nd=  form_for(@book), :html => {multipart => true} do |f| @o
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+html => {multipart => true} do |f| @output_buffer.safe_appen
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:39: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/books/new.html.erb:39: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:35:35 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+nd=  form_for(@book), :html => {multipart => true} do |f| @o
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+html => {multipart => true} do |f| @output_buffer.safe_appen
+                              ^
+/home/goblin/Desktop/Udio/app/views/books/new.html.erb:36: syntax error, unexpected keyword_end, expecting end-of-input
+'.freeze;     end 
+                 ^):
+  
+app/views/books/new.html.erb:8: syntax error, unexpected =>, expecting keyword_end
+app/views/books/new.html.erb:8: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/books/new.html.erb:36: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:38:08 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered books/new.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:46:16 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 16:54:26 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (156.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 229ms (Views: 188.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:10:03 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.8ms)
+
+
+  
+NameError (uninitialized constant Book::AvatarUploader):
+  
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:12:57 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.4ms)
+
+
+  
+NameError (uninitialized constant Book::AvatarUploader):
+  
+app/models/book.rb:3:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:13:42 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.2ms)
+
+
+  
+NameError (uninitialized constant Book::AvatarUploader):
+  
+app/models/book.rb:3:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:14:56 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.5ms)
+
+
+  
+NameError (uninitialized constant Book::AvatarUploader):
+  
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:15:13 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (uninitialized constant Book::AvatarUploader):
+  
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:16:19 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered books/new.html.erb within layouts/application (234.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 332ms (Views: 268.1ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:16:24 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4edy9w8Xb1LqXbRp4oTinW3X34SS0QNyXQ7L6XSumSZgnBWuawACrMoEWrEuSkZr3SOfbPploS2rkgqkrkkpvg==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.0ms)
+  Rendered books/new.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 37.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2018-03-27 17:16:44 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 190ms (Views: 165.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:16:50 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:16:51 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered books/new.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (20.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:16:53 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CCxjHC61JvD94YIW7hRLmRXwZqrWIjpn9NC7axAaw9J5P/tMOAXqojqsTeFJZQD4cNJ40uD9atfBFgfAxapEXQ==", "book"=>{"title"=>"", "year"=>"", "author"=>"", "price"=>"", "course_number"=>"", "isbn"=>""}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.1ms)
+  Rendered books/new.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:17:59 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 149ms (Views: 141.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:18:02 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (17.8ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 73ms (Views: 35.7ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:18:31 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8NJURynIyyp3+8+5tMZAGifKjIcB6+3VEX9T+eFeb4iBwcwXP3gHeLC2AE4Ttwt7QuiS/zc0vWUkue9SNO7oBw==", "book"=>{"title"=>"weeeeee", "year"=>"2333", "author"=>"edwfew", "price"=>"13", "course_number"=>"", "isbn"=>"1234567890987", "image"=>#<ActionDispatch::Http::UploadedFile:0x005642fbb58e68 @tempfile=#<Tempfile:/tmp/RackMultipart20180327-10450-m1dwio.png>, @original_filename="zucchipakoda.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"zucchipakoda.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered books/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:19:02 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lVKUWFX3z/TvbbNPLgEaLhQapceouiEZkQ0xkWQXq0wUKfMBMeCiCs80XZfiz77YpO7lL8AOg0ZnkfDcvvAb1A==", "book"=>{"title"=>"weeeeee", "year"=>"2333", "author"=>"edwfew", "price"=>"13", "course_number"=>"", "isbn"=>"1234567890987", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f1830513840 @tempfile=#<Tempfile:/tmp/RackMultipart20180327-10450-958upl.png>, @original_filename="zucchipakoda.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"zucchipakoda.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "weeeeee"], ["year", "2333"], ["isbn", "1234567890987"], ["created_at", "2018-03-28 00:19:02.753112"], ["updated_at", "2018-03-28 00:19:02.753112"], ["price", "13"], ["course_number", ""], ["image", "zucchipakoda.png"], ["author", "edwfew"]]
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/7
+Completed 302 Found in 62ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/books/7" for 127.0.0.1 at 2018-03-27 17:19:02 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (Version thumb doesn't exist!):
+    28:   <%= @book.course_number %>
+    29: </p>
+    30: 
+    31: <%= image_tag @book.image_url(:thumb) if @book.image? %>
+  
+app/views/books/show.html.erb:31:in `_app_views_books_show_html_erb___298429790701565546_69870932088880'
+Started GET "/books/7" for 127.0.0.1 at 2018-03-27 17:21:00 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 33.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/uploads/book/image/7/thumb_zucchipakoda.png" for 127.0.0.1 at 2018-03-27 17:21:00 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/book/image/7/thumb_zucchipakoda.png"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:21:04 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/uploads/book/image/7/thumb_zucchipakoda.png" for 127.0.0.1 at 2018-03-27 17:21:04 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/uploads/book/image/7/thumb_zucchipakoda.png"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:21:05 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered books/new.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:21:30 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JfqO45CQUKkbLGH4pRjalb8uTq/ROX19VmGUN13iZDJU6RazhiCc+9xhrg8CaZH02gxQ1+fmLc1jpyiciFLjvQ==", "book"=>{"title"=>"image", "year"=>"1000", "author"=>"23df", "price"=>"100", "course_number"=>"", "isbn"=>"9999999999999", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f182a357c78 @tempfile=#<Tempfile:/tmp/RackMultipart20180327-10450-1sqwgn9.png>, @original_filename="buffet.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"buffet.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+NoMethodError (undefined method `resize_to_fit' for #<AvatarUploader::Uploader69870882068800:0x007f182a310c60>):
+  
+app/controllers/books_controller.rb:17:in `create'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:24:06 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 45ms (Views: 44.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:24:07 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 2.5ms)
+
+
+  
+LoadError (cannot load such file -- RMagick):
+  
+app/uploaders/avatar_uploader.rb:3:in `include'
+app/uploaders/avatar_uploader.rb:3:in `<class:AvatarUploader>'
+app/uploaders/avatar_uploader.rb:1:in `<top (required)>'
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:25:24 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 32ms (Views: 30.2ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:25:25 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.1ms)
+
+
+  
+LoadError (cannot load such file -- mini_magick (You may need to install the mini_magick gem)):
+  
+app/uploaders/avatar_uploader.rb:4:in `include'
+app/uploaders/avatar_uploader.rb:4:in `<class:AvatarUploader>'
+app/uploaders/avatar_uploader.rb:1:in `<top (required)>'
+app/models/book.rb:2:in `<class:Book>'
+app/models/book.rb:1:in `<top (required)>'
+app/controllers/books_controller.rb:5:in `new'
+Started GET "/" for 127.0.0.1 at 2018-03-27 17:26:48 -0700
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 42.4ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 17:26:50 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 30.7ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 17:27:08 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7NN+SelPccPyxtTV4IzZxgC+GJJ0wzjINFTXyOwlZNedwOYZ//+9kTWLGyJH/ZKnZZwG6kIcaHgBkmtjOZXjWA==", "book"=>{"title"=>"image", "year"=>"1890", "author"=>"dfff", "price"=>"334", "course_number"=>"", "isbn"=>"1234321234567", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f182a37a070 @tempfile=#<Tempfile:/tmp/RackMultipart20180327-10450-1ck3foh.png>, @original_filename="buffet.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"buffet.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "image"], ["year", "1890"], ["isbn", "1234321234567"], ["created_at", "2018-03-28 00:27:08.158440"], ["updated_at", "2018-03-28 00:27:08.158440"], ["price", "334"], ["course_number", ""], ["image", "buffet.png"], ["author", "dfff"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/8
+Completed 302 Found in 20ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/books/8" for 127.0.0.1 at 2018-03-27 17:27:08 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-27 18:02:34 -0700
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 181ms (Views: 171.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sell" for 127.0.0.1 at 2018-03-27 18:02:36 -0700
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered books/new.html.erb within layouts/application (22.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 45.5ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-03-27 18:03:01 -0700
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rYCMC7m+nt8YWyBY4hanq5GeDh7joVTSINu96T0YMe/ckxRbrw5Sjd8W769FZ+zK9LwQZtV+BGIVHQFC6Ki2YA==", "book"=>{"title"=>"image2", "year"=>"2000", "author"=>"ws32", "price"=>"23", "course_number"=>"", "isbn"=>"2345434543345", "image"=>#<ActionDispatch::Http::UploadedFile:0x00564e7718b3e0 @tempfile=#<Tempfile:/tmp/RackMultipart20180327-11725-68uy3t.png>, @original_filename="vadonut.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[image]\"; filename=\"vadonut.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "image", "author") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "image2"], ["year", "2000"], ["isbn", "2345434543345"], ["created_at", "2018-03-28 01:03:01.558961"], ["updated_at", "2018-03-28 01:03:01.558961"], ["price", "23"], ["course_number", ""], ["image", "vadonut.png"], ["author", "ws32"]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/books/9
+Completed 302 Found in 157ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/books/9" for 127.0.0.1 at 2018-03-27 18:03:01 -0700
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+

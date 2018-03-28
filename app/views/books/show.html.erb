@@ -28,7 +28,4 @@
   <%= @book.course_number %>
 </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @book.image %>
-</p>
+<%= image_tag @book.image_url(:thumb) if @book.image? %>
