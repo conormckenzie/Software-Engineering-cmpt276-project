@@ -24,18 +24,33 @@ class UsersController < ApplicationController
 
   # POST /users
   # POST /users.json
-  def create
-    @user = User.new(user_params)
+def create
 
+    @user = User.new(user_params)
+=begin
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        #format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        #format.html { render :new }
+        #format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+=end
+    #user = User.find_by(user_params)
+    if @user.save
+      # Log the user in and redirect to the user's show page.
+        user = User.find_by(user_params)
+	session[:user_id] = @user.id
+      #log_in user
+      redirect_to @user
+    else
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new'
+   
+   end 
+
   end
 
   # PATCH/PUT /users/1
