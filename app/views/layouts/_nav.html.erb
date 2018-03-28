@@ -3,27 +3,33 @@
 		<%# <div class="navButton"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), {action: 'index', controller: 'login'} </div> %>
 		<div class="navButton"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
 		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
 		
 		<%= link_to root_path do %>
 			<div class="navButton">Home</div>
 		<% end %>
 		
-		<%= link_to '#' do%>
-		<div class="navButton">Buy</div>
+		<% if !current_user %>
+			<%= link_to login_path do %>
+				<div class="navButton">Sell</div>
+			<% end %>
+		<% else %>
+			<%= link_to '#' do %>
+				<div class="navButton">Sell</div>
+			<% end %>
 		<% end %>
 	
 		<%= link_to login_path do %>
 			<div class="navButton">Log in</div>
 		<% end %>
 		
-		<%= link_to signup_path do %>
-			<div class="navButton">Sign up</div>
+		<% if !current_user %>
+			<%= link_to signup_path do %>
+				<div class="navButton">Sign up</div>
+			<% end %>
+		<% else %>
+			<%= link_to signout_path do %>
+				<div class="navButton">Sign Out</div>
+			<% end %>
 		<% end %>
 	</div>
           
