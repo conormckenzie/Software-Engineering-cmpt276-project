@@ -24,8 +24,10 @@ class BooksController < ApplicationController
 	end
 	
 	def search
-		@books = Book.ransack(params[:q]).result(distinct: true).limit(5)
-		
+		debugger
+		@q = "%#{params[:query]}%"
+		@books = Project.where("title LIKE ? or author LIKE or isbn LIKE ?", @q, @q, @q)
+		render 'index'
 	end
 
 

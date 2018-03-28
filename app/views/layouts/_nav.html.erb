@@ -1,17 +1,14 @@
 <nav>
 	<div class="navbar">
 		
-		<div class="navButton"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
+		<div class="navStatic"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
 		
 		
-		<%= form_for(@books) do |f| %>
-			
+		<%= form_tag search_books_path do %>
+			<div class="navSatic" id="searchBar">
+					<input class="search" name="query" placeholder="Search Books" type="text" autocomplete="off">	
+			</div>
 		<% end $>
-		<form action="/action_page.php">
-      <input type="text" placeholder="Search your books" name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-		
 		
 		<%= link_to root_path do %>
 			<div class="navButton">Home</div>
