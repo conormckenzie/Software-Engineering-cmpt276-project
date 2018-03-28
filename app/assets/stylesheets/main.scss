@@ -54,11 +54,7 @@ $nav-height:70px;
 		margin: 0px 15% 0px 15%;
 		align-self: center;
 		display: grid;
-<<<<<<< HEAD
-		grid-template-columns: 1fr 7fr 1fr 1fr 1fr 1fr;
-=======
 		grid-template-columns: 1fr 6fr 1fr 1fr 1fr 1fr;
->>>>>>> search
 		grid-auto-rows: $nav-height;
 		
 		a{
