@@ -8,7 +8,6 @@
 		<div class="emptyDiv"></div>
 		<div class="emptyDiv"></div>
 		<div class="emptyDiv"></div>
-		<div class="emptyDiv"></div>
 		
 		<%= link_to root_path do %>
 			<div class="navButton">Home</div>
@@ -17,14 +16,26 @@
 		<%= link_to '#' do%>
 		<div class="navButton">Buy</div>
 		<% end %>
-	
-		<%= link_to login_path do %>
-			<div class="navButton">Log in</div>
+
+		<%= link_to sell_path do %>
+			<div class="navButton">Sell</div>
 		<% end %>
+
+		<% if !current_user %>
+			<%= link_to login_path do %>
+				<div class="navButton">Log in</div>
+			<% end %>
 		
-		<%= link_to signup_path do %>
-			<div class="navButton">Sign up</div>
+			<%= link_to signup_path do %>
+				<div class="navButton">Sign up</div>
+			<% end %>
 		<% end %>
+		<% if current_user %>
+			<%= link_to signout_path do %>
+				<div class="navButton">Sign out</div>
+			<% end %>
+			<p>Signed in as <strong><%= current_user.name %></strong>!</p>
+	    <% end %> 
 	</div>
           
 </nav>
