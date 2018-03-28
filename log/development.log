@@ -15720,3 +15720,101 @@ ActionView::Template::Error (undefined method `name' for #<Book:0x0000000598bc50
 app/views/books/search.json.jbuilder:3:in `block (2 levels) in _app_views_books_search_json_jbuilder___3662630650129001398_70289929149120'
 app/views/books/search.json.jbuilder:2:in `block in _app_views_books_search_json_jbuilder___3662630650129001398_70289929149120'
 app/views/books/search.json.jbuilder:1:in `_app_views_books_search_json_jbuilder___3662630650129001398_70289929149120'
+Started GET "/" for 207.23.204.117 at 2018-03-28 23:45:59 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered sessions/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 156ms (Views: 149.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books/search" for 207.23.204.117 at 2018-03-28 23:46:02 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2FI+hslHwWnXU7+4cJ/zdezJ/0rkasH693iAi0gpRRg6B0E7cvWund/zzvmXRjZhPUdnHA/1q03qjva30KPB/w==", "query"=>"abc"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%abc%' or author LIKE '%abc%' or isbn LIKE '%abc%')[0m
+  Rendered books/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 28ms (Views: 22.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for 207.23.204.117 at 2018-03-28 23:46:12 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (12.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "fallback/default.png" is not present in the asset pipeline.):
+    25:         <td><%= book.price %></td>
+    26:         <td><%= book.course_number %></td>
+    27:         <td><%= book.isbn %></td>
+    28:         <td><%= book.image %></td>
+    29:         <td><%= link_to 'Show', book %></td>
+    30:         <td><%= link_to 'Edit', edit_book_path(book) %></td>
+    31:         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  
+app/uploaders/avatar_uploader.rb:23:in `default_url'
+app/views/books/index.html.erb:28:in `block in _app_views_books_index_html_erb__2176348892099539370_70351295945500'
+app/views/books/index.html.erb:20:in `_app_views_books_index_html_erb__2176348892099539370_70351295945500'
+Started GET "/books" for 207.23.204.117 at 2018-03-28 23:47:54 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  Rendered books/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books/search" for 207.23.204.117 at 2018-03-28 23:48:11 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZMysC8HdI8eAiGMXgrphqvZ2hpwQtq+S8/CrFfBM5smGmdO2em9MM4goElZlY6S+J/geyvspxSXuBt0paMZiLg==", "query"=>"ddd"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%ddd%' or author LIKE '%ddd%' or isbn LIKE '%ddd%')[0m
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books/search" for 207.23.204.117 at 2018-03-28 23:48:25 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZMysC8HdI8eAiGMXgrphqvZ2hpwQtq+S8/CrFfBM5smGmdO2em9MM4goElZlY6S+J/geyvspxSXuBt0paMZiLg==", "query"=>"mike"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%mike%' or author LIKE '%mike%' or isbn LIKE '%mike%')[0m
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books/search" for 207.23.204.117 at 2018-03-28 23:48:33 +0000
+Cannot render console from 207.23.204.117! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZMysC8HdI8eAiGMXgrphqvZ2hpwQtq+S8/CrFfBM5smGmdO2em9MM4goElZlY6S+J/geyvspxSXuBt0paMZiLg==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%')[0m
+  Rendered books/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
