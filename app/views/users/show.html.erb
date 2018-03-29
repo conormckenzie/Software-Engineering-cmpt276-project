@@ -39,10 +39,13 @@
 		        <td><%= book.course_number %></td>
 		        <td><%= book.isbn %></td>
 		        <td><%= image_tag book.image_url(:thumb) if book.image? %></td>
+		        <td><%= link_to 'Delete this listing', book, method: :delete, data: {confirm: "Are you sure?"} %></td>
 		    </tr>
+
 		<% end %>
 	</tbody>
 </table>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
