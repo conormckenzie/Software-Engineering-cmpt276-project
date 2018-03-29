@@ -27520,3 +27520,40 @@ Completed 200 OK in 84ms (Views: 80.6ms | ActiveRecord: 0.0ms)
 >>>>>>> origin/some_css_changes
 
 
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:00:44 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 663ms (Views: 655.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:00:45 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 130ms (Views: 127.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:00:48 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
