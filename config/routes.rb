@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   get    '/sell',    to:  'books#new'
+  #post   '/signup',   to: 'sessions#create'
   post   '/login',   to: 'sessions#create'
   post   '/sell',    to: 'books#create'
   #delete '/logout',  to: 'sessions#destroy'
@@ -15,6 +16,8 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#facebook'
   get 'auth/failure', to: redirect('/')
 
+  post 'books/search' => 'books#search', as: 'search_books'
+  
   root 'sessions#index'
 
 end

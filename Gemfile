@@ -27,13 +27,15 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
-
-gem 'omniauth-facebook'
 
 gem 'carrierwave', '~> 1.0'
 
 gem 'mini_magick'
+#used for search function
+#gem 'ransack'
+
+ gem 'bcrypt', '~> 3.1.7'
+ gem 'omniauth-facebook'
 #gem 'pg', '0.20.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

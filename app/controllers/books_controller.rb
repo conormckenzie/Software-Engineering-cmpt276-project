@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-	before_action :require_login
+	before_action :require_login,  only: [:new, :create]
 
 	def new
 		@book = Book.new
@@ -21,6 +21,12 @@ class BooksController < ApplicationController
 		else
 			render 'new'
 		end
+	end
+	
+	def search
+		@q = "%#{params[:query]}%"
+		@books = Book.where("title LIKE ? or author LIKE ? or isbn LIKE ?", @q, @q, @q)
+		render 'index'
 	end
 
 
