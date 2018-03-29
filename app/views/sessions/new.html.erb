@@ -1,6 +1,10 @@
 <% provide(:title, "Log in") %>
 <h1 align="center">Log in</h1>
 
+<h2><% flash.each do |key, value| %>
+    <div class="flash <%= key %>"><%= value %></div>
+<% end %></h2>
+
 <div class="center">
   <div class="forms">
     <%= form_for(:session, url: login_path) do |f| %>
