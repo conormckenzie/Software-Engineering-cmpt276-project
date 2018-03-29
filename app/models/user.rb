@@ -1,5 +1,6 @@
 class User < ApplicationRecord
 
+  has_many :books
   attr_accessor :remember_token
   def self.from_omniauth(auth)
      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
