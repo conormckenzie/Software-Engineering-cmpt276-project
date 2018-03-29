@@ -40,6 +40,11 @@ class BooksController < ApplicationController
 			render 'index'
 		end
 	end
+	
+	def listing
+	   Book.find_by_title(params[:title])
+	   render 'listing'
+	end
 
 
 	def destroy

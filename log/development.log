@@ -27557,6 +27557,7 @@ Processing by SessionsController#index as HTML
 Completed 200 OK in 79ms (Views: 78.4ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-03-29 15:13:14 -0700
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by SessionsController#index as HTML
@@ -27598,6 +27599,272 @@ ActionController::RoutingError (No route matches [GET] "/login/users"):
 actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
 web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
 web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+=======
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:06:12 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"orboifeXqxU4hfhPXwGD3RhtIBgyGVk5mz6kwNnysoRA45c0TCXE4TAliQ642EbJyeO4TtmGM46GyNL8QXg2Yw==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 263ms (Views: 254.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for 207.23.218.200 at 2018-03-29 22:07:41 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 207.23.218.200 at 2018-03-29 22:07:47 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AzU3XJOyPpOiDqfLYX0IkgREba5rKwLVnk5uiC1f3ewCX7Hk5XiESK0S49wNNGTrSWCvLvpDWlYUGlRhAfuMCw==", "session"=>{"email"=>"abc@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "abc@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://e5ec27b19ef04a2ab41ffa07bd292b0e.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 94ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:07:47 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/9" for 207.23.218.200 at 2018-03-29 22:07:49 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 111ms (Views: 107.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:08:51 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O5vlP6Zu1EHrJmQ7g5cwdHBlW7B8BJogtuvAAUSvez2t6rS9zPVmyOMvCI4QJmXS/Kix/dHtcBwZuY9NeNZjtQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (1.0ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 123.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:15:00 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KcvjphKv2YKMN5j9xQ/F/7zOaGV5+b4hS7QzNgVzc3PLnpwbqR22doSX6bwi1gDrbUDwM5Jm1JZWQkUKnfn3lA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/books/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/books_controller.rb:40:in `search'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:16:16 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.7ms)
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (15.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 98.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:16:18 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uPapRfQuftnLpcM2JYhgHLbWqiFRtQ2jxaNAK4qLAPpao9b4T5wRLcMFsnfCUaUIZ1gyd7oqZxTYVTYXEgGEHQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/books/index.html.erb:39: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/books_controller.rb:40:in `search'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:18:16 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.3ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (15.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:18:19 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AyHzuAHLYrpeK/Cy747p6nkDs46Gi2ik39UAAdaPAFLhdIwFunkNTlaLgfMIVyz+qI0r2G0UAhPCI3Y9TgWEtQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  Rendered books/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/books/index.html.erb:37: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/controllers/books_controller.rb:40:in `search'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:18:41 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:18:43 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ukKLBmHqO80XmNMcWtr4odMJ7eN/9AGnoFCADRePHghYF/S72lhUOR84ol29Az21Aod1tZRraxC9pvYxjwWa7w==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 93.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/Sumerville2" for 207.23.218.200 at 2018-03-29 22:18:46 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"Sumerville2"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=Sumerville2):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:19:41 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (15.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 93ms (Views: 92.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:19:44 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dAJFc4oM3CwWKWSTnbDmd7pBvybSBdZB/lD407gv64uWVzrOMb6z2B6JFdJ6aSNja88ncDmavPbjpo7vIKVvbA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (21.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 109ms (Views: 105.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/Northern%20Frontier%20-%20Northern%20Homeland:%20The%20Report%20Of%20The%20MacKenzie%20Valley%20Pipeline%20Inquiry%20(2nd%20Ed.)" for 207.23.218.200 at 2018-03-29 22:19:47 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as 
+  Parameters: {"id"=>"Northern Frontier - Northern Homeland: The Report Of The MacKenzie Valley Pipeline Inquiry (2nd Ed"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=Northern Frontier - Northern Homeland: The Report Of The MacKenzie Valley Pipeline Inquiry (2nd Ed):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started GET "/books/search" for 207.23.218.200 at 2018-03-29 22:20:59 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=search):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:21:03 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dAJFc4oM3CwWKWSTnbDmd7pBvybSBdZB/lD407gv64uWVzrOMb6z2B6JFdJ6aSNja88ncDmavPbjpo7vIKVvbA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (20.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (15.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/listing/Northern%20Frontier%20-%20Northern%20Homeland:%20The%20Report%20Of%20The%20MacKenzie%20Valley%20Pipeline%20Inquiry%20(2nd%20Ed.)" for 207.23.218.200 at 2018-03-29 22:21:05 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/books/listing/Northern%20Frontier%20-%20Northern%20Homeland:%20The%20Report%20Of%20The%20MacKenzie%20Valley%20Pipeline%20Inquiry%20(2nd%20Ed.)"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+>>>>>>> origin/listing
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
 web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
 actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
@@ -27622,6 +27889,7 @@ puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
 puma (3.11.3) lib/puma/server.rb:438:in `process_client'
 puma (3.11.3) lib/puma/server.rb:302:in `block in run'
 puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+<<<<<<< HEAD
 Started GET "/users" for 127.0.0.1 at 2018-03-29 15:13:41 -0700
 Processing by UsersController#index as HTML
   Rendering users/index.html.erb within layouts/application
@@ -27966,6 +28234,1380 @@ Processing by UsersController#show as HTML
   Rendered layouts/_nav.html.erb (3.1ms)
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 132ms (Views: 126.7ms | ActiveRecord: 1.6ms)
+=======
+Started GET "/books/search" for 207.23.218.200 at 2018-03-29 22:23:44 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=search):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:23:48 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dAJFc4oM3CwWKWSTnbDmd7pBvybSBdZB/lD407gv64uWVzrOMb6z2B6JFdJ6aSNja88ncDmavPbjpo7vIKVvbA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (14.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/books/90" for 207.23.218.200 at 2018-03-29 22:23:50 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    30: 
+    31: <p>
+    32:   <strong>Seller: </strong>
+    33:   <%= @book.user.name %>
+    34: </p>
+    35: 
+    36: <%= image_tag @book.image_url(:thumb) if @book.image? %>
+  
+app/views/books/show.html.erb:33:in `_app_views_books_show_html_erb__23033092296105791_69826909371800'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:25:07 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 86.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:25:08 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:25:11 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sb/T5SVNksJGt7V2/xt3pdUNfQ/E85ewzcr/6cfjpdCr6qxYnv/9Nk4XxDcYwrKxBIPlWS9s/QfQPInVX2khNw==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 95.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:25:12 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    30: 
+    31: <p>
+    32:   <strong>Seller: </strong>
+    33:   <%= @book.user.name %>
+    34: </p>
+    35: 
+    36: <%= image_tag @book.image_url(:thumb) if @book.image? %>
+  
+app/views/books/show.html.erb:33:in `_app_views_books_show_html_erb__23033092296105791_47622160'
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:26:56 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    30: 
+    31: <p>
+    32:   <strong>Seller: </strong>
+    33:   <%= @book.user.id %>
+    34: </p>
+    35: 
+    36: <%= image_tag @book.image_url(:thumb) if @book.image? %>
+  
+app/views/books/show.html.erb:33:in `_app_views_books_show_html_erb__23033092296105791_69826792740200'
+Started GET "/sell" for 207.23.218.200 at 2018-03-29 22:28:48 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 85.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books" for 207.23.218.200 at 2018-03-29 22:29:06 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AHU+SrhFt0bjEqNNP5YOQ5u/yKcBqSofbkBfGhK1yU5NwBp45992CRUCYN0b91/vu3wn7GXPP9U/+FnurRcRlg==", "book"=>{"title"=>"testing1", "year"=>"1000", "author"=>"dick", "price"=>"1", "course_number"=>"", "isbn"=>"1111111111111"}, "commit"=>"Post my book"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "books" ("title", "year", "isbn", "created_at", "updated_at", "price", "course_number", "author", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "testing1"], ["year", "1000"], ["isbn", "1111111111111"], ["created_at", "2018-03-29 22:29:06.651722"], ["updated_at", "2018-03-29 22:29:06.651722"], ["price", "1"], ["course_number", ""], ["author", "dick"], ["user_id", 9]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://e5ec27b19ef04a2ab41ffa07bd292b0e.vfs.cloud9.us-east-2.amazonaws.com/books/96
+Completed 302 Found in 12ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:29:06 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 94ms (Views: 91.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:29:09 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jir3D8rZne1ByMzNbwmuqYlq+NhIix7Y8xZcZEsiibDEf4iycWvyGUlovYyI0Gu9WORgjqMUdG/u4CpY06gNVw==", "query"=>"dick"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%dick%' or author LIKE '%dick%' or isbn LIKE '%dick%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:29:11 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:29:25 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (8.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:29:28 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FCW7b5+pOU7qi8bmUN550+vB2t84Oyj8QHjtBnvyB16CVOrt9TKLx+KCqlPDbyx1ZwwwkpXSwsDvKqJKR4sf1g==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/89" for 207.23.218.200 at 2018-03-29 22:29:31 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 89], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    30: 
+    31: <p>
+    32:   <strong>Seller: </strong>
+    33:   <%= @book.user.name %>
+    34: </p>
+    35: 
+    36: <%= image_tag @book.image_url(:thumb) if @book.image? %>
+  
+app/views/books/show.html.erb:33:in `_app_views_books_show_html_erb__23033092296105791_69826793924560'
+Started GET "/books/search" for 207.23.218.200 at 2018-03-29 22:29:35 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=search):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:29:39 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8EwxKWIAaZZYmi9LispgBO1ed0Af9wxnqUorZxP/JUgSGU6U2bIGYlA6XgptE6UQPNDvFvRoZtC0vF1bi3Whrw==", "query"=>"dick"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%dick%' or author LIKE '%dick%' or isbn LIKE '%dick%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:29:41 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:31:08 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')'
+ @book.user.name != nil then );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:31:16 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+=( if @book.user.name != nil );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:31:19 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.3ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:31:21 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zEr32fF3Bycb/QnHdGDz70b+lZaDW7DxBpwy1VLtLVsuH4hkSsVo0xNdeIaTuTb7l3ANwGjE2kYbakTpymepvA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 95.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:31:22 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+=( if @book.user.name != nil );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/books/search" for 207.23.218.200 at 2018-03-29 22:31:43 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Book with 'id'=search):
+  
+app/controllers/books_controller.rb:15:in `show'
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:31:45 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zEr32fF3Bycb/QnHdGDz70b+lZaDW7DxBpwy1VLtLVsuH4hkSsVo0xNdeIaTuTb7l3ANwGjE2kYbakTpymepvA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 99ms (Views: 97.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/91" for 207.23.218.200 at 2018-03-29 22:31:46 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 91], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')'
+@book.user.name != nil) then );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:32:05 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:32:08 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EgQO/SHW7h78cXHickoXiArxvFsq96xMF5awtepPmfXwUXFAmmSB6vTRAKOVk9Kc238kDcFoxvsKYMaJcsUdEg==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 131ms (Views: 129.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/90" for 207.23.218.200 at 2018-03-29 22:32:10 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+if (@book.user.name != nil) do @output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected keyword_do, expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:32:44 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 84.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:32:46 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62Nov4wFQN0upy7lqqCnbcptUsW75mVOmiGdMzvKOm4JNhcCN7cvKSYHX6RNeWJ5G+PKk1B5D/mH1+sPo0C+iQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 101.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/85" for 207.23.218.200 at 2018-03-29 22:32:48 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+ if @book.user.name.present? );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:34:53 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 89.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:34:55 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k37WO+ZDLNWLemyZFpMCz+KiEWavyH6dSXuVQZ6sZEpxK6mGXfFDIYPaHdjxSsfbMyyJMERXFCpUjeN9BibgrQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:34:57 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+ if @book.user.name.present? );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:35:31 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 80.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:35:33 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B45AT5WYxI53ojJBVNysAWOpAkua3bUAFsN2wT9iR1Hl2z/yLiqren8CQwCzBWkVsieaHXFC37cLNQD9p+jDtg==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:35:35 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+append=( if @book.user.name? );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+append=( if @book.user.name? );@output_buffer.safe_append='
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:37:04 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (9.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:37:06 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3HL33URD+LTuRbbam0PTTBTjmkJNGbM+oHKLPhzlnzU+J4hg//GXQOblx5t8mhZYxW0CFKaG2Ym9hP0ChG8b0g==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/90" for 207.23.218.200 at 2018-03-29 22:37:08 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+=( if @book.user.name != nil );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/books/show.html.erb:36: syntax error, unexpected keyword_end, expecting ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:37:17 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 76.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:37:19 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kpbW0n49HrlcdA9H9x/9aQSqSPaTOhizrTUzqdujRoJww6lvxY9xTVTUfgYQxjh91STQoHilcgSww0WVQynCZQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 102ms (Views: 99.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/95" for 207.23.218.200 at 2018-03-29 22:37:22 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')'
+ @book.user.name != nil then );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:37:53 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:37:55 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 79.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:37:57 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/WdqUoUW6vRw33Yfx8KCIZDrvLOs99hxIS89WqqiOxkfMhXvPqSFAHh/B14gG0c1QWUk5UdossY82UtmMii//g==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 93.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/books/91" for 207.23.218.200 at 2018-03-29 22:37:58 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 91], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')'
+@book.user.name != nil) then );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:38:59 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:39:01 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RC9jZ/8H1llQrHwdfVT+aAR0YTTVKuciwT7FU923H/KmehzaRLW5rVgMDVyajTt81fr5Yj61jZXcyLNvRT2bFQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/90" for 207.23.218.200 at 2018-03-29 22:39:02 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:31: syntax error, unexpected ')'
+d=( if @book.user.name? then );@output_buffer.safe_append='
+                              ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/ec2-user/environment/cmpt276-b/app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/books/show.html.erb:31: syntax error, unexpected ')'
+app/views/books/show.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/books/show.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:39:53 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:39:55 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TVNYZsTIn9kMdXOUMZ/bMsd9c4J2AJ8JHnB710Fgjd6vBifbf3rwLQTVAtXWRh4mFvPr1J2f9b4Dhg3r2eoJOQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 95.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/92" for 207.23.218.200 at 2018-03-29 22:39:56 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"92"}
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 92], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    28:   <%= @book.course_number %>
+    29: </p>
+    30: 
+    31: <% if @book.user.name %>
+    32:   <p>
+    33:     <strong>Seller: </strong>
+    34:     <%= @book.user.name %>
+  
+app/views/books/show.html.erb:31:in `_app_views_books_show_html_erb__23033092296105791_69826796469240'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:40:19 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:40:21 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cwL+j4ZTAB296wKymHAUMBjWUNhE64y4mk60Ya/ZTTORV4EyPeFv6bVLc/N/qdEkyVjIjq905g+HuMJdN1PJ1A==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 97.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/95" for 207.23.218.200 at 2018-03-29 22:40:22 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 75.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/88" for 207.23.218.200 at 2018-03-29 22:40:27 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 88], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    28:   <%= @book.course_number %>
+    29: </p>
+    30: 
+    31: <% if @book.user.name != nil %>
+    32:   <p>
+    33:     <strong>Seller: </strong>
+    34:     <%= @book.user.name %>
+  
+app/views/books/show.html.erb:31:in `_app_views_books_show_html_erb__23033092296105791_69826787109880'
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:40:42 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:40:45 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JJ9z8UtrJgU7rS29AJkle5UTks0JAVDCwlj/mhAWyanGygxM8NlJ8TMNXPznQOBvRJ0Km+KeOnXfrommiJxNTg==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/91" for 207.23.218.200 at 2018-03-29 22:40:46 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"91"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 91], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:40:56 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qv6CFU2nsuYbBr8AXWrgg59Ygo6VnJy9eDH8XbjaK708j9OXJzwAbxMP07XO27UlE5Vowzh1doHXY7MRhKMzNQ==", "query"=>"test"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%test%' or author LIKE '%test%' or isbn LIKE '%test%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 77.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:40:58 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 87.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:41:20 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 79.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:41:27 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:41:42 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 88ms (Views: 85.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:41:42 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:41:55 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bkcGR54qrNWEhGbyBWpmSjyWBOQB5Gbx8OWvhA2OysmMEnn6JZjDIYwkF7Pis6Ne7Ricsup7DEbtE9m4lQROLg==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/books/33" for 207.23.218.200 at 2018-03-29 22:41:57 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+Started GET "/books/33" for 207.23.218.200 at 2018-03-29 22:41:57 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (17.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 151ms (Views: 148.9ms | ActiveRecord: 0.3ms)
+
+
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 168ms (Views: 165.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:42:01 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iv1Q/Rw65BcI/QjRHhDCh4MKsmVZO26iHCyNyLUKiKgcjAF/dqFWngD0ZGSNoZchD8dYKPTShJ6zfsKEiXOQIA==", "query"=>"test"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%test%' or author LIKE '%test%' or isbn LIKE '%test%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:42:03 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.4ms)
+>>>>>>> origin/listing
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:44:34 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (30.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 316ms (Views: 307.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:44:37 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 98.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 207.23.218.200 at 2018-03-29 22:44:39 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered books/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 154ms (Views: 136.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:44:46 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signout" for 207.23.218.200 at 2018-03-29 22:44:47 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+Redirected to https://e5ec27b19ef04a2ab41ffa07bd292b0e.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:44:47 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 207.23.218.200 at 2018-03-29 22:44:48 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 207.23.218.200 at 2018-03-29 22:44:50 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:44:57 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QiKRa5THu04xhWnB/Le7kdnvzncUoVzKQPjrf8UOWETUU8Dp/lwJxzmMBXRvBu43VSIkOrlItvbvqqQz+XdAzA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 97.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/85" for 207.23.218.200 at 2018-03-29 22:44:59 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 85], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/96" for 207.23.218.200 at 2018-03-29 22:45:03 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"96"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 96], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 87.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:46:54 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:46:56 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 22:47:00 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kfnr5+Tz4mv4XWnBWOFOp6mkzdYyrJYNVOlrdT6C+8pzrJRaX0GNn/D9GIC/OIuzeCpVgNkz/LpJHx1Jpgh/LQ==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/90" for 207.23.218.200 at 2018-03-29 22:47:03 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 90], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 80.7ms | ActiveRecord: 0.2ms)
 
 
 Started GET "/users/10" for 127.0.0.1 at 2018-03-29 15:48:55 -0700
