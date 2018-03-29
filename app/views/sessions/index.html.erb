@@ -1,5 +1,13 @@
 <h1> Welcome to Udio! </h1>
-<button> <%= link_to "Sell", '/sell' %> </button>
+<% if !current_user %>
+  <%= link_to login_path do %>
+    <button> Sell </button>
+  <% end %>
+<% else %>
+  <%= link_to sell_path do %>
+    <button> Sell </button>
+  <% end %>
+<% end %>
 
 <!-- BEGIN Google Charts code: used by Conor, taken from
 https://developers.google.com/chart/interactive/docs/quick_start-->
