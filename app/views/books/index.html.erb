@@ -25,7 +25,7 @@
         <td><%= book.price %></td>
         <td><%= book.course_number %></td>
         <td><%= book.isbn %></td>
-        <td><%= book.image %></td>
+        <td><%= image_tag book.image_url(:thumb) if book.image? %></td>
       </tr>
     <% end %>
   </tbody>
