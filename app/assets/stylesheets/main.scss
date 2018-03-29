@@ -9,6 +9,7 @@ $nav-height: 65px;
 
 @import 'nav.scss';
 @import 'footer.scss';
+@import 'forms.scss';
 
 //phone
 @media (max-width: #{$tablet-width - 1px}){

@@ -23397,3 +23397,646 @@ Processing by SessionsController#index as HTML
 Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 64.180.194.13 at 2018-03-29 17:46:21 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (16.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 615ms (Views: 607.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:46:23 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:46:25 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 123ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:46:26 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 105ms (Views: 83.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 64.180.194.13 at 2018-03-29 17:46:41 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0A0zd07LyyMnhdDTCYtdJaBXGLBZNTtnRD9DnG4teCaryX7zYlJHfimFx+UOI8IX09JzxuVyc39zUG0t5YKswQ==", "user"=>{"name"=>"abc", "email"=>"123@email.com", "password"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "123@email.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "abc"], ["email", "123@email.com"], ["created_at", "2018-03-29 17:46:41.469632"], ["updated_at", "2018-03-29 17:46:41.469632"], ["password_digest", "$2a$10$84INWxRCYo/aZq/vPBzIk.dcc4Y6.8T4uFiIjaxlt5gpx5hvXSMwG"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."name" = ? AND "users"."email" = ? AND "users"."password" = ? LIMIT ?[0m  [["name", "abc"], ["email", "123@email.com"], ["password", "123456"], ["LIMIT", 1]]
+Redirected to https://e5ec27b19ef04a2ab41ffa07bd292b0e.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 90ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 64.180.194.13 at 2018-03-29 17:46:41 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendered layouts/_nav.html.erb (6.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 79.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:46:43 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered books/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 99ms (Views: 86.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:50:54 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 201ms (Views: 199.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:51:06 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:51:25 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered books/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:51:27 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered books/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/sell" for 64.180.194.13 at 2018-03-29 17:52:09 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered books/new.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/signout" for 64.180.194.13 at 2018-03-29 17:52:12 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#destroy as HTML
+Redirected to https://e5ec27b19ef04a2ab41ffa07bd292b0e.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 64.180.194.13 at 2018-03-29 17:52:13 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 80.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:52:13 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:52:16 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:52:41 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:53:19 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:53:30 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:53:31 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:53:32 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 99.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:53:32 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:53:33 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:53:34 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:53:34 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:53:36 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:54:03 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:55:09 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:55:11 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:55:32 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:55:49 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:56:11 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:58:48 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:59:02 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:03 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:59:04 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:05 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 75.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:06 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 64.180.194.13 at 2018-03-29 17:59:07 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:18 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 64.180.194.13 at 2018-03-29 17:59:19 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:19 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 17:59:36 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:00:19 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:00:54 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:01:00 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:01:36 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (7.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:01:37 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:02:02 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:02:19 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:03:13 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:03:24 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:03:46 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:03:54 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:04:02 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:04:07 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 64.180.194.13 at 2018-03-29 18:04:28 +0000
+Cannot render console from 64.180.194.13! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+

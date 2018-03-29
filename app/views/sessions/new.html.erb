@@ -2,7 +2,7 @@
 <h1 align="center">Log in</h1>
 
 <div class="center">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="forms">
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
@@ -12,10 +12,9 @@
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+         <div class="remember"><%= f.check_box :remember_me %> Remember me</div>
       <% end %>
-
+      <br>
       <%= f.submit "Log in", class: "btn btn-primary", id: "submit" %>
     <% end %>
 

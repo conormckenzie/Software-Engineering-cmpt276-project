@@ -1,0 +1,25 @@
+@media (min-width: #{$desktop-width}) {
+   .forms{
+      
+      text-align:center;
+      
+      input {
+   	width: 50%;
+   	height: auto;
+   	margin: 8px auto;
+   	border: 1px solid black;
+   	border-radius: 4px;
+      display: block;
+   
+      }
+      
+      .remember{
+         display:grid;
+         width:30%;
+         margin:auto;
+         grid-template-columns: 1fr 4fr;
+      }
+   
+   }
+
+}
