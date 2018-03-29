@@ -1,0 +1,38 @@
+@media (min-width: #{$desktop-width}) {
+   footer{
+		
+		background-color:$main-green;
+		
+		.footerbar{
+			margin-left: 10%;
+			margin-right: 10%;
+			align-self: center;
+			display: grid;
+			grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+			grid-auto-rows: $nav-height;
+			
+		}
+	
+		a{
+			text-decoration:none;
+		}
+		.footerDiv{
+			align-content: center;
+			margin: auto;
+			
+			text-align:center;
+			vertical-align:middle;
+			line-height:$nav-height;
+			text-decoration: none;
+			color:white;
+			&:hover {
+				background-color: $main-green;
+			}
+			&:visited{
+				text-decoration:none;
+				color:black;	
+			}
+		
+		}
+   }
+}

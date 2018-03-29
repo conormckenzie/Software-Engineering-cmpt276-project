@@ -1,0 +1,72 @@
+
+@media (min-width: #{$desktop-width}) {
+   nav{
+		background-color: $main-green;
+	}
+	
+	#logo{
+			max-height:$nav-height;	
+			
+			&:hover{
+				background-color:$main-green;
+			}
+	}
+	
+	.searchButton{
+	  background: #1d8213;
+	  display:inline-block;
+	  font-size: $font-size;
+	  color:#fff;
+	  text-decoration: none;
+	  margin:0px 10px 0px 10px;
+	  &:hover {
+		  background: #3cb0fd;
+		  text-decoration: none;
+		}
+	}
+	
+   #searchForm{
+      margin-right:10px;
+      
+   }
+
+
+	
+	#searchBar{
+		margin-top:17px;
+		display:grid;
+		height:50%;
+		grid-template-columns: 4fr 1fr;
+	}
+	
+	.navbar{
+		margin: 0px 15% 0px 15%;
+		align-self: center;
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+		grid-auto-rows: $nav-height;
+		a{
+			text-decoration:none;
+			font-size:$font-size;
+		
+			&:visited{
+				color:black;
+			}
+		}
+		
+		
+		
+	}
+		
+	.navButton{
+		text-align:center;
+		vertical-align:middle;
+		line-height:$nav-height;
+		text-decoration: none;
+		color:#fff;
+		&:hover {
+			background-color: $dark-green;
+		}
+
+	}
+}

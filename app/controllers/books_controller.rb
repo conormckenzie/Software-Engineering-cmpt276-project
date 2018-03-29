@@ -32,9 +32,13 @@ class BooksController < ApplicationController
 
 
 	def search
-		@q = "%#{params[:query]}%"
-		@books = Book.where("title LIKE ? or author LIKE ? or isbn LIKE ?", @q, @q, @q)
-		render 'index'
+		if params[:query].blank?
+			redirect_to root_path
+		else
+			@q = "%#{params[:query]}%"
+			@books = Book.where("title LIKE ? or author LIKE ? or isbn LIKE ?", @q, @q, @q)
+			render 'index'
+		end
 	end
 
 

@@ -10,9 +10,13 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+ 
+/*@import 'active_admin.scss';*/
+@import 'main.scss';
+
+
 
  #submit {
  	background-color: #4CAF50;
@@ -34,15 +38,15 @@
  	max-height: 50px;
  }*/
 
-input {
-	width: 50%;
-	height: auto;
-	margin: 8px auto;
-	border: 1px solid black;
-	border-radius: 4px;
-	display: block;
+/*input {*/
+/*	width: 50%;*/
+/*	height: auto;*/
+/*	margin: 8px auto;*/
+/*	border: 1px solid black;*/
+/*	border-radius: 4px;*/
+/*	display: block;*/
 
-}
+/*}*/
 
 .center {
 	margin: auto;
