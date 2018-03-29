@@ -30047,3 +30047,121 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 102ms (Views: 97.7ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 207.23.218.200 at 2018-03-29 22:59:58 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#index as HTML
+  Rendering sessions/index.html.erb within layouts/application
+  Rendered layouts/_render.html.erb (0.2ms)
+  Rendered sessions/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 300ms (Views: 293.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:02 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k40KwyfvTOvPBn0ApPsBtj8WS9jl2h/BPxiwmCUrh1px2HV+nF0jH8emDEFDIsSi7pjTjg5FdXYi7sakvaEDvQ==", "query"=>"dick"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%dick%' or author LIKE '%dick%' or isbn LIKE '%dick%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 95.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:05 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RcVVpukVaDzKfphCd8Jloh+BXdn0km+ZS1uItcyAhfOnkCobUqcHyMLe6QOQG6C2zg/Fjx8NBS5Wrf6JVAoBFA==", "query"=>"1"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%1%' or author LIKE '%1%' or isbn LIKE '%1%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (21.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 131ms (Views: 127.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/books/95" for 207.23.218.200 at 2018-03-29 23:00:07 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"95"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? ORDER BY "books"."created_at" DESC LIMIT ?[0m  [["id", 95], ["LIMIT", 1]]
+  Rendering books/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered books/show.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 130.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:10 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qw6ELBsMdX00n45WRuGOgvm73L9/KpxedgQ13fVn/+bVf9WucZfH9DyW4uPVUNskdXY28tLDdmLZVnqRyR7nbg==", "query"=>"2"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%2%' or author LIKE '%2%' or isbn LIKE '%2%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:12 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TzxbmfO/fNs908CzTDHQLnGRqh8VFukmdtS5emTtv+6taSQkSA0TLzVzsfKr6BU6oB8ySf6Jg5FrIs9G/Gc7CQ==", "query"=>"summer"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%summer%' or author LIKE '%summer%' or isbn LIKE '%summer%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:15 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jDdLpdZWkS7dzkncxXaVu7FkFZBdKFhxRFlIdC1tiLFuYjQYbeT+2tVuOJ0ir1CvYOqNxra3MsZZrz5ItecMVg==", "query"=>"summer"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%summer%' or author LIKE '%summer%' or isbn LIKE '%summer%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:17 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dXvmz1WqCptWmfrWpqnnzek9lBlZ73mmCAT141/OQXCXLply7hhlb145i5dBcCLZOLMMT7JwExEV8oPfx0TFlw==", "query"=>"2"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%2%' or author LIKE '%2%' or isbn LIKE '%2%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books/search" for 207.23.218.200 at 2018-03-29 23:00:20 +0000
+Cannot render console from 207.23.218.200! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BooksController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZhsFPBYCm/EwE6d4PqaiaqPmdGHso4VhaEmbPYy2NjmETnqBrbD0BTiz1jnZf2d+cmjsNwc879Z1v+0BFDyy3g==", "query"=>"sume"}
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (title LIKE '%sume%' or author LIKE '%sume%' or isbn LIKE '%sume%') ORDER BY "books"."created_at" DESC[0m
+  Rendered books/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 85.7ms | ActiveRecord: 0.3ms)
+
+
