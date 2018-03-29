@@ -1,9 +1,4 @@
 <p>
-  <strong>ID:</strong>
-  <%= @book.id %>
-</p>
-
-<p>
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
@@ -28,9 +23,16 @@
   <%= @book.course_number %>
 </p>
 
-<p>
-  <strong>Seller: </strong>
-  <%= @book.user.name %>
-</p>
+<% if @book.user != nil %>
+  <p>
+    <strong>Seller: </strong>
+    <%= @book.user.name %>
+  </p>
+  <p>
+    <strong>Contact Seller by Email</strong>
+    <%= @book.user.email %>
+  </p>
+<% end %>
+
 
 <%= image_tag @book.image_url(:thumb) if @book.image? %>

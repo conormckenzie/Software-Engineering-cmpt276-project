@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   
   #post "users/:id" => 'users#profile', as: 'user_profile'
   get 'users/:name' => 'users#profile', as: :profile
+  post 'books/:id' => 'books#listing', as: :listing
   
   root 'sessions#index'
 
