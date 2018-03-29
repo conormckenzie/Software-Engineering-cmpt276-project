@@ -28,4 +28,9 @@
   <%= @book.course_number %>
 </p>
 
+<p>
+  <strong>User ID:</strong>
+  <%= @book.user_id %>
+</p>
+
 <%= image_tag @book.image_url(:thumb) if @book.image? %>
