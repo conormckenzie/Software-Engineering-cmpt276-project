@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180329023431) do
+ActiveRecord::Schema.define(version: 20180329040959) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -48,6 +48,10 @@ ActiveRecord::Schema.define(version: 20180329023431) do
     t.datetime "updated_at", null: false
     t.string "password_digest"
     t.string "remember_digest"
+    t.string "provider"
+    t.string "uid"
+    t.string "oauth_token"
+    t.string "oauth_expires_at"
   end
 
 end
