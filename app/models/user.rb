@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  has_many :books
+  has_many :books, dependent: :destroy
   attr_accessor :remember_token
   def self.from_omniauth(auth)
      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -37,6 +37,7 @@ class User < ApplicationRecord
   def User.new_token
     SecureRandom.urlsafe_base64
   end
+  
 
   # Remembers a user in the database for use in persistent sessions.
   def remember

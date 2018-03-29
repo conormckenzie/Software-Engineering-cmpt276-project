@@ -19,6 +19,9 @@ Rails.application.routes.draw do
 
   post 'books/search' => 'books#search', as: 'search_books'
   
+  post "users/#{@user}/" => 'users#profile', as: 'user_profile'
+  
+  
   root 'sessions#index'
 
 end

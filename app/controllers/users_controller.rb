@@ -24,7 +24,7 @@ class UsersController < ApplicationController
 
   # POST /users
   # POST /users.json
-def create
+  def create
 
     @user = User.new(user_params)
 =begin
@@ -42,14 +42,14 @@ def create
     if @user.save
       # Log the user in and redirect to the user's show page.
         user = User.find_by(user_params)
-	session[:user_id] = @user.id
+	    session[:user_id] = @user.id
       #log_in user
       redirect_to root_path
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
    
-   end 
+    end 
 
   end
 
@@ -76,6 +76,12 @@ def create
       format.json { head :no_content }
     end
   end
+  
+  def profile
+    @profile =  User.find(params["id"])
+    render 'profile'
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -87,4 +93,5 @@ def create
     def user_params
       params.require(:user).permit(:name, :email, :password)
     end
+    
 end
