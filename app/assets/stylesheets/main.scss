@@ -239,7 +239,6 @@ $nav-height: 65px;
 			margin: 0px auto 0px auto;
 	}
 
-<<<<<<< HEAD
 	button{
 		 background: #1d8213;
 	  display:inline-block;
@@ -287,87 +286,6 @@ $nav-height: 65px;
 	    font-size: 12px;
 	    list-style: square;
 	  }
-=======
-	nav{
-		background-color: $main-green;
-	}
-
-	#logo{
-			max-height:$nav-height;
-
-			&:hover{
-				background-color:$main-green;
-			}
-	}
-
-	.navbar{
-		margin: 0px 15% 0px 15%;
-		align-self: center;
-		display: grid;
-		grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
-		grid-auto-rows: $nav-height;
-
-		a{
-			text-decoration:none;
-			font-size:$nav-font-size;
-
-			&:visited{
-				color:black;
-			}
-		}
-
-
-
-	}
-
-	.navButton{
-		text-align:center;
-		vertical-align:middle;
-		line-height:$nav-height;
-		text-decoration: none;
-		color:black;
-		&:hover {
-			background-color: $dark-green;
-		}
-
-	}
-
-	footer{
-
-		background-color:$main-green;
-
-		.footerbar{
-			margin-left: 10%;
-			margin-right: 10%;
-			align-self: center;
-			display: grid;
-			grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
-			grid-auto-rows: $nav-height;
-
-		}
-
-		a{
-			text-decoration:none;
-		}
-		.footerDiv{
-			align-content: center;
-			margin: auto;
-
-			text-align:center;
-			vertical-align:middle;
-			line-height:$nav-height;
-			text-decoration: none;
-			color:black;
-			&:hover {
-				background-color: $main-green;
-			}
-			&:visited{
-				text-decoration:none;
-				color:black;
-			}
-
-		}
->>>>>>> origin/some_css_changes
 	}
 
 
