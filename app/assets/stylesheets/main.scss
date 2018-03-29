@@ -6,6 +6,7 @@ $main-green: #4CAF50;
 $dark-green: #326834;
 $font-size: 0.9em;
 $nav-height: 65px;
+//$searchbar-width: 300px;
 
 @import 'nav.scss';
 @import 'footer.scss';
@@ -14,14 +15,204 @@ $nav-height: 65px;
 //phone
 @media (max-width: #{$tablet-width - 1px}){
 	.wrapper{
-		background-color:black;
+		//background-color:brown;
+		font-family: verdana, arial, helvetica, sans-serif;
+		align-self: center;
+		padding:auto 0px auto 0px;
+		min-height: 800px;
+	}
+
+	main{
+			min-width: 540px;
+			width: 70%;
+			min-height: 600px;
+			align-self: center;
+			margin: 0px 0% 0px 0%;
+	}
+
+	nav{
+		background-color: $main-green;
+	}
+
+	#logo{
+			max-height:$nav-height;
+			text-align:center;
+			&:hover{
+				background-color:$main-green;
+			}
+	}
+
+	/*#searchBar{
+		min-width:$searchbar-width;
+	}*/
+
+	.navbar{
+		margin: 0px 0% 0px 0%;
+		align-self: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: $nav-height;
+
+		a{
+			text-decoration:none;
+			font-size:$nav-font-size;
+
+			&:visited{
+				color:black;
+			}
+		}
+
+
+
+	}
+
+	.navButton{
+		text-align:center;
+		vertical-align:middle;
+		line-height:$nav-height;
+		text-decoration: none;
+		color:black;
+		&:hover {
+			background-color: $dark-green;
+		}
+
+	}
+
+	footer{
+
+		background-color:$main-green;
+
+		.footerbar{
+			margin-left: 10%;
+			margin-right: 10%;
+			align-self: center;
+			display: grid;
+			grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+			grid-auto-rows: $nav-height;
+
+		}
+
+		a{
+			text-decoration:none;
+		}
+		.footerDiv{
+			align-content: center;
+			margin: auto;
+
+			text-align:center;
+			vertical-align:middle;
+			line-height:$nav-height;
+			text-decoration: none;
+			color:black;
+			&:hover {
+				background-color: $main-green;
+			}
+			&:visited{
+				text-decoration:none;
+				color:black;
+			}
+
+		}
 	}
 }
 
 //tablet
 @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
 	.wrapper{
-		background-color:red;
+		//background-color:red;
+		font-family: verdana, arial, helvetica, sans-serif;
+		align-self: center;
+		padding:auto 0px auto 0px;
+		min-height: 800px;
+	}
+
+	main{
+			min-width: 800px;
+			width: 70%;
+			min-height: 800px;
+			align-self: center;
+			margin: 0px 5% 0px 5%;
+	}
+
+	nav{
+		background-color: $main-green;
+	}
+
+	#logo{
+			max-height:$nav-height;
+
+			&:hover{
+				background-color:$main-green;
+			}
+	}
+
+	.navbar{
+		margin: 0px 5% 0px 5%;
+		align-self: center;
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+		grid-auto-rows: $nav-height;
+
+		a{
+			text-decoration:none;
+			font-size:$nav-font-size;
+
+			&:visited{
+				color:black;
+			}
+		}
+
+
+
+	}
+
+	.navButton{
+		text-align:center;
+		vertical-align:middle;
+		line-height:$nav-height;
+		text-decoration: none;
+		color:black;
+		&:hover {
+			background-color: $dark-green;
+		}
+
+	}
+
+	footer{
+
+		background-color:$main-green;
+
+		.footerbar{
+			margin-left: 10%;
+			margin-right: 10%;
+			align-self: center;
+			display: grid;
+			grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+			grid-auto-rows: $nav-height;
+
+		}
+
+		a{
+			text-decoration:none;
+		}
+		.footerDiv{
+			align-content: center;
+			margin: auto;
+
+			text-align:center;
+			vertical-align:middle;
+			line-height:$nav-height;
+			text-decoration: none;
+			color:black;
+			&:hover {
+				background-color: $main-green;
+			}
+			&:visited{
+				text-decoration:none;
+				color:black;
+			}
+
+		}
 	}
 }
 
@@ -39,7 +230,7 @@ $nav-height: 65px;
 		font-family:helvetica;
 		font-size:0.9em;
 	}
-	
+
 	main{
 			min-width: 1024px;
 			width: 70%;
@@ -48,6 +239,7 @@ $nav-height: 65px;
 			margin: 0px auto 0px auto;
 	}
 
+<<<<<<< HEAD
 	button{
 		 background: #1d8213;
 	  display:inline-block;
@@ -95,9 +287,88 @@ $nav-height: 65px;
 	    font-size: 12px;
 	    list-style: square;
 	  }
+=======
+	nav{
+		background-color: $main-green;
+	}
+
+	#logo{
+			max-height:$nav-height;
+
+			&:hover{
+				background-color:$main-green;
+			}
+	}
+
+	.navbar{
+		margin: 0px 15% 0px 15%;
+		align-self: center;
+		display: grid;
+		grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr;
+		grid-auto-rows: $nav-height;
+
+		a{
+			text-decoration:none;
+			font-size:$nav-font-size;
+
+			&:visited{
+				color:black;
+			}
+		}
+
+
+
+	}
+
+	.navButton{
+		text-align:center;
+		vertical-align:middle;
+		line-height:$nav-height;
+		text-decoration: none;
+		color:black;
+		&:hover {
+			background-color: $dark-green;
+		}
+
+	}
+
+	footer{
+
+		background-color:$main-green;
+
+		.footerbar{
+			margin-left: 10%;
+			margin-right: 10%;
+			align-self: center;
+			display: grid;
+			grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+			grid-auto-rows: $nav-height;
+
+		}
+
+		a{
+			text-decoration:none;
+		}
+		.footerDiv{
+			align-content: center;
+			margin: auto;
+
+			text-align:center;
+			vertical-align:middle;
+			line-height:$nav-height;
+			text-decoration: none;
+			color:black;
+			&:hover {
+				background-color: $main-green;
+			}
+			&:visited{
+				text-decoration:none;
+				color:black;
+			}
+
+		}
+>>>>>>> origin/some_css_changes
 	}
 
 
 }
-
-
