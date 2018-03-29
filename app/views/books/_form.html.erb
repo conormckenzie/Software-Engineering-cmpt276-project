@@ -1,0 +1,25 @@
+<%= form_for(@book) do |f| %>
+  <%= render 'shared/error_messages', object: @book %>
+
+
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :year %>
+      <%= f.text_field :year, class: 'form-control' %>
+
+      <%= f.label :isbn %>
+      <%= f.text_field :isbn, class: 'form-control' %>
+
+      <%= f.label :author %>
+      <%= f.text_field :author, class: 'form-control' %>
+
+      <%= f.label :price %>
+      <%= f.text_field :price, class: 'form-control' %>
+
+      <%= f.label :course_number %>
+      <%= f.text_field :course_number, class: 'form-control' %>
+
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

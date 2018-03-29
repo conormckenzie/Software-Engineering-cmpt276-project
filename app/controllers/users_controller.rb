@@ -44,7 +44,7 @@ def create
         user = User.find_by(user_params)
 	session[:user_id] = @user.id
       #log_in user
-      redirect_to @user
+      redirect_to root_path
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'

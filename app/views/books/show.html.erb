@@ -29,8 +29,8 @@
 </p>
 
 <p>
-  <strong>User ID:</strong>
-  <%= @book.user_id %>
+  <strong>Seller: </strong>
+  <%= @book.user.name %>
 </p>
 
 <%= image_tag @book.image_url(:thumb) if @book.image? %>
