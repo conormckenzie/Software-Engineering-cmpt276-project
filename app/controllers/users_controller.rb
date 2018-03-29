@@ -78,8 +78,7 @@ class UsersController < ApplicationController
   end
   
   def profile
-    @profile =  User.find(params["id"])
-    render 'profile'
+    User.find_by_name(params[:name])
   end
 
 

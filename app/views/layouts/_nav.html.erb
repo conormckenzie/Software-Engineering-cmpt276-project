@@ -41,8 +41,8 @@
 				<div class="navButton">Sign Out</div>
 			<% end %>
 			
-			<%= link_to user_profile_path do %>
-				<div class="navButton"><strong><%= current_user.name %></strong></div>
+			<%= link_to profile_path(current_user.id) do %>
+					<div class="navButton"><strong><%= current_user.name %></strong></div>
 			<% end %>
 			
 		<% end %>
