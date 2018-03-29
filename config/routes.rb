@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'auth/:provider/callback', to: 'sessions#facebook'
   get 'auth/failure', to: redirect('/')
 
+  post 'books/search' => 'books#search', as: 'search_books'
+  
   root 'sessions#index'
 
 end

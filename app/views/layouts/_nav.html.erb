@@ -1,8 +1,14 @@
 <nav>
 	<div class="navbar">
-		<%# <div class="navButton"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), {action: 'index', controller: 'login'} </div> %>
-		<div class="navButton"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
-		<div class="emptyDiv"></div>
+		
+		<div class="navStatic"id="logo"><%= link_to image_tag("notebook.png", :alt => "Udio logo", :id => "logo"), root_path %> </div>
+		
+		
+		<%= form_tag search_books_path do %>
+			<div class="navSatic" id="searchBar">
+					<input class="search" name="query" placeholder="Search Books" type="text" autocomplete="off">	
+			</div>
+		<% end %>
 		
 		<%= link_to root_path do %>
 			<div class="navButton">Home</div>
