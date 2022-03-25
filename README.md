@@ -1,3 +1,5 @@
+EDIT: This project has served its purpose as a technology demonstration, and is no longer being maintained.
+
 Project Abstract
 
 Udio is a textbook trading platform designed specifically for University students, and will be tested with SFU students only on release. 
